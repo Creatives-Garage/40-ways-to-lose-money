@@ -8,7 +8,7 @@ import { data } from "dataSource";
 export default function Index() {
   return (
     <>
-      <Section bgColor="#">
+      <Section bgColor="#81E8E5">
         <div className={styles.ponzi}></div>
         <div className={styles.body}>
           <Header level={2}>{data[0].header}</Header>
