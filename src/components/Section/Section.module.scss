@@ -1,0 +1,10 @@
+.section{
+    display: flex;
+    flex-direction: row;
+}
+
+//When reverseFlex is true
+.sectionReverse{
+    display: flex;
+    flex-direction: row-reverse;
+}
