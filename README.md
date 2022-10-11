@@ -1,5 +1,8 @@
 This project is bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## About
+A character development guide on how to lose money in Kenya.
+
 ## Getting Started
 
 First, run the development server:
