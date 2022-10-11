@@ -1,11 +1,19 @@
+@import "../../styles/variables/index.scss";
+
+.h1, .h2, .h3{
+  color: $body-text;
+  font-family: Coco Goose;
+  font-weight: 600;
+}
+
 .h1{
-    font-size: 40px;
+  font-size: 48px;
 }
 
 .h2{
-    font-size: 32px;
+  font-size: 32px;
 }
 
 .h3{
-    font-size: 28px;
+  font-size: 28px;
 }

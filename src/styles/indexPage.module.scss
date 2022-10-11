@@ -1,0 +1,71 @@
+@import "./variables/index.scss";
+
+.bodyRight{
+    width: 50%;
+    position: absolute;
+    bottom: 20%;
+    left: 5%;
+}
+
+.bodyLeft{
+    width: 40%;
+    position: absolute;
+    bottom: 20%;
+    right: 5%;
+}
+
+.pastor{
+    position: absolute;
+    right: 0px;    
+    bottom: -10px;        
+}
+
+.luthuli{
+    position: absolute;
+    left: 0px;    
+    bottom: -60px;
+    z-index: 1;        
+}
+
+.washwash{
+    position: absolute;
+    right: 0px;    
+    top: 0px;
+    z-index: 1;    
+}
+
+.nywele{
+    position: absolute;
+    left: 0px;    
+    bottom: -5px;
+    z-index: 1;    
+}
+
+.ben10{
+    position: absolute;
+    right: 0px;    
+    bottom: -5px;
+    z-index: 1;    
+}
+
+.iphone{
+    position: absolute;
+    left: 0px;    
+    bottom: -5px;
+    z-index: 1;    
+}
+
+.shitstorm{
+    position: absolute;
+    right: 0px;    
+    top: 1%;
+    z-index: 1;    
+}
+
+.logbook{
+    position: absolute;
+    left: 0px;    
+    top: 1%;
+    z-index: 1;    
+}
+

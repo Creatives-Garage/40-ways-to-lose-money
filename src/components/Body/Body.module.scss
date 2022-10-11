@@ -1,3 +1,10 @@
+@import "../../styles/variables/index.scss";
+
 .p{
-    font-size: 24px;
+    color: $body-text;
+    font-family: Coco Goose;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    margin-top: 16px;
 }

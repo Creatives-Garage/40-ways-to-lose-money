@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Header.module.scss";
+import styles from "./Body.module.scss";
 
 const BodyText = ({ children }) => {
   return(

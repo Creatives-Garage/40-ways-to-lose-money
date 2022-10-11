@@ -2,7 +2,7 @@ export const data = [
     {
         name: "Ponzi",
         image: "/Ponzi.png",
-        header: "Ponzi SCheme",
+        header: "Ponzi Scheme",
         body: "So your friends made money from DECI and other Ponzi schemes, and despite your better judgement you decided not to send that 100K to mathe just yet. I mean, a 200% return on investment in two months? Who wouldn’t jump at the opportunity!? Boom! You put in your savings, Bang!, Their offices are closed! F*^% ! The money disappears as fast as you thought you would triple it."
     },
     {

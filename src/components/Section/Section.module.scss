@@ -1,10 +1,19 @@
 .section{
     display: flex;
     flex-direction: row;
-}
+    position: relative;
+    padding: 32px 132px;
+    min-height: 480px;
 
-//When reverseFlex is true
-.sectionReverse{
-    display: flex;
-    flex-direction: row-reverse;
+    @media (max-width: 1441px) {
+        padding: 72px 80px;        
+    }
+
+    @media (max-width: 1025px) {
+        padding: 72px 64px;        
+    }
+
+    @media (max-width: 769px) {
+        padding: 56px 32px;        
+    }
 }

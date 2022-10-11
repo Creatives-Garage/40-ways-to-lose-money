@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: auto;
+}
+
+@font-face {
+  font-family: "Coco Goose";
+  src: url("../../public/fonts/CocoGoose/cocogoose_pro_light-ttf.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Coco Goose";
+  src: url("../../public/fonts/CocoGoose/cocogoose_pro_semilight.woff2") format("truetype");
+  font-style: normal;
+  font-weight: 400;  
+}
+@font-face {
+  font-family: "Coco Goose";
+  src: url("../../public/fonts/CocoGoose/cocogoose_pro.woff2") format("truetype");
+  font-style: normal;
+  font-weight: 900;
+}
