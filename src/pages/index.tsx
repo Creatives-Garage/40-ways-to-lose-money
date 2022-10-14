@@ -11,8 +11,10 @@ export default function Index() {
   return (
     <div className={styles.pageWrapper}>
       <Section bgColor="#81E8E5">
-        <div className={styles.ponzi}></div>
-        <div className={styles.body}>
+        <div className={styles.ponzi}>
+          <Image src="/pyramid.png" width={560} height={550} alt="Pastor"/>
+        </div>
+        <div className={styles.bodyRight}>
           <Header level={1}>{data[0].header.toUpperCase()}</Header>
           <BodyText>{data[0].body}</BodyText>
         </div>
