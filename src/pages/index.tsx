@@ -11,19 +11,31 @@ export default function Index() {
   return (
     <div className={styles.pageWrapper}>
       <Section bgColor="#81E8E5">
-        <div className={styles.ponzi}>
+        <motion.div
+          initial={{ y: 100 }}
+          whileInView={{ y: 0 }}
+          transition={{ duration: 3, type: "spring", stiffness: 50 }}
+          viewport={{ once: false }} 
+          className={styles.ponzi}
+        >
           <Image src="/pyramid.png" width={560} height={550} alt="Pastor"/>
-        </div>
-        <div className={styles.bodyRight}>
+        </motion.div>
+        <motion.div
+          initial={{ y: -100 }}
+          whileInView={{ y: 0 }}
+          transition={{ duration: 3, type: "spring" }}
+          viewport={{ once: false }} 
+          className={styles.bodyRight}
+        >
           <Header level={1}>{data[0].header.toUpperCase()}</Header>
           <BodyText>{data[0].body}</BodyText>
-        </div>
+        </motion.div>
       </Section>
       <Section bgColor="#FEA794">
         <motion.div
           initial={{ y: 100 }}
           whileInView={{ y: 17 }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 1, type: "spring" }}
           viewport={{ once: false }} 
           className={styles.bodyLeft}
         >
@@ -75,9 +87,15 @@ export default function Index() {
         </motion.div>
       </Section>
       <Section bgColor="#F97F89">
-        <div className={styles.nywele}>
+        <motion.div
+          initial={{ opacity: 0}}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 2.5, type: "spring" }}
+          viewport={{ once: false }} 
+          className={styles.nywele}
+        >
           <Image src="/shuka.png" width={600} height={760} alt="Pastor"/>
-        </div>
+        </motion.div>
         <div className={styles.bodyRight}>
           <Header level={1}>{data[4].header.toUpperCase()}</Header>
           <BodyText>{data[4].body}</BodyText>
@@ -135,8 +153,8 @@ export default function Index() {
       </Section>
       <Section bgColor="#FEF490">
         <motion.div
-          initial={{ opacity: 0, scale: "50%"}}
-          whileInView={{ opacity: 1, scale: "100%", rotate: "360deg" }}
+          initial={{ opacity: 0, scale: "0%"}}
+          whileInView={{ opacity: 1, scale:"70%", rotate: "360deg" }}
           transition={{ duration: 1, stiffness: 100 }}
           viewport={{ once: false }} 
           className={styles.logbook}
