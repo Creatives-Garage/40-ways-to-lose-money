@@ -53,5 +53,47 @@ export const data = [
         header: "FAKE LOGBOOK",
         body: "You’ve saved up for years. Butter is a luxury you only see on the television. However, it was worth it, finally you’ve bought the car you’ve always wanted. What’s more, the guy even gave you a discount if you paid in cash! However, before you can even replace that new car smell with your own brand of funk, a car pulls up in front of you on the highway and three burly men pop out and rush towards you. Your car is up for auction, some clever monkey has cloned your log book and used it as security to take out loans from every single digital loan app, SACCO and dodgy logbook loan office on river road ."
     },
+    {
+        name: "House Offplan",
+        image: "/house.png",
+        header: "BUYING A HOUSE OFFPLAN",
+        body: "You’ve saved up for years. Butter is a luxury you only see on the television. However, it was worth it, finally you’ve bought the car you’ve always wanted. What’s more, the guy even gave you a discount if you paid in cash! However, before you can even replace that new car smell with your own brand of funk, a car pulls up in front of you on the highway and three burly men pop out and rush towards you. Your car is up for auction, some clever monkey has cloned your log book and used it as security to take out loans from every single digital loan app, SACCO and dodgy logbook loan office on river road ."
+    },
+    {
+        name: "Multi-level Marketing",
+        image: "/multilevel.png",
+        header: "MULTILEVEL MARKETING",
+        body: "Your friend calls you and asks you to join her for a wonderful conference and business opportunity. Plus, there’s a free lunch! So you join her at the Pan Africa conference room and the guy I’m stage starts with “WHO WANTS TO MAKE SOME MONEY!” Well you do, of course! So you lay forthe Ksh 5000 application fee and they tell you that all you need to do is recruit more people, who will recruit more people. The more people recruited under you the more money you make. It take you about an hour later before you realise that basically it’s a pyramid."
+    },
+    {
+        name: "Pata Potea",
+        image: "/patapotea.png",
+        header: "PATA POTEA",
+        body: "You are walking in town minding your own business, then you see some guys crowded at one spot, since you’re waiting for that relative from shags who your mother insists on you picking from Tearoom, you decide to join the crowd. People are winning off a very easy game, so you decide that bus fare your mum gave you, you’d bet it on the card guys, ole wako kumbe it was all a sham to begin with. Let’s just say it ends in premium tears."
+    },
+    {
+        name: "Newspaper in a matatu",
+        image: "/newspaper.png",
+        header: "NEWSPAPER IN A  MATATU",
+        body: "That guy reading a newspaper in the mat, looks harmless, yes? NO! Nobody cares about the news that much, the guy at the front farted and you can almost see the small in the air but Mr newspaper has not even reacted. As you suffer the gastric attack, the hand not holding the newspaper reaches into your bag and takes out your wallet and phone. Once he’s done he finally notices the smell and starts fanning his face with the newspaper before he gets off at the next stop."
+    },
+    {
+        name: "Biz",
+        image: "/biz.png",
+        header: "NAANZA BIZ",
+        body: "Your buddy has attended all the right seminars, downloaded business plan templates off the internet and is now ready to start a new business…again. If you invest with him he promises that your bank account will soon become more swollen than Charlie SHeen’s liver. You believe in him, you trust him, you’ve known each other for years! So you make the transfer to his bank account and the next day he’s converted all the money you gave him into champagne for Njeri, Atieno, Nyasuguta and every other person with five metres of him at B-Club."
+    },
+    {
+        name: "Vote",
+        image: "/vote.png",
+        header: "VOTE FOR ME",
+        body: "Your neighbourhood looks like a warzone, the local government officials spend their time buying drinks at the ka-local and the pothole outside your estate gate now qualifies as a crater. So you decide that it’s time you stood up and worked to make a change (also your local MP has three Prados and you want to move out of the nduthi life). You get some friends together, start pooling money, collect signatures and finally your candidacy is secure. But you’ve to pay the IEBC guy Ksh x to actually qualify, then you’ve to rent cars to take you to rallies and fuel them, also that crowd of boda boda guys and rally attendees also need a little ‘incentive’ to show their support. After the polls  ( and 20 million shillings later) you’ve received 4 votes and there’s 6 people in your household who went to the voting centre. The only thing you end up changing is your credit rating because (surprise surprise) you’re now in debt."
+    },
+    {
+        name: "Phone in tao",
+        image: "/phoneInTao.png",
+        header: "USING A PHONE IN TAO",
+        body: "“Ke ke keke Wauuuu and then what did she saaaay?”  Fatuma’s story is hilarious! You can’t stop laughing and you keep asking for more details! Situational awareness is something you heard once at a self-defence class which you attended for the gym selfies, not something you practise…while walking…through a sketchy part of town. However, faster than Fatuma can say “she asked me why I was in bed with her husband”, your phone is whisked out of your hands and all you see is a young chap threading through the crowd on Moi Avenue. You lose sight of him before you even get the chance to shout “Mwizi!” "
+    },
 ];
 
