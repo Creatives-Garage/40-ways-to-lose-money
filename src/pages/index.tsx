@@ -10,7 +10,7 @@ import {motion, useMotionValue, useTransform} from "framer-motion"
 export default function Index() {
   return (
     <div className={styles.pageWrapper}>
-      <Section bgColor="#81E8E5">
+      <Section bgColor="#c9f414">
         <motion.div
           initial={{ y: 100 }}
           whileInView={{ y: 0 }}
@@ -51,7 +51,7 @@ export default function Index() {
           <Image src="/Pastor.png" width={560} height={650} alt="Pastor"/>
         </motion.div>
       </Section>
-      <Section bgColor="#B6E4A4">
+      <Section bgColor="#309ead">
         <motion.div
           initial={{ x: -150 }}
           whileInView={{ x: 0 }}
@@ -101,7 +101,7 @@ export default function Index() {
           <BodyText>{data[4].body}</BodyText>
         </div>
       </Section>
-      <Section bgColor="#C193B8">
+      <Section bgColor="#329dad">
         <motion.div 
           className={styles.ben10}
           initial={{ x: 200 }}
@@ -122,7 +122,7 @@ export default function Index() {
           <BodyText>{data[5].body}</BodyText>
         </motion.div>
       </Section>
-      <Section bgColor="#FEA894">
+      <Section bgColor="#991e21">
         <motion.div
           initial={{ opacity: 0, scale: "50%" }}
           whileInView={{ opacity: 1, scale: "100%" }}
@@ -137,7 +137,7 @@ export default function Index() {
           <BodyText>{data[6].body}</BodyText>
         </div>
       </Section>
-      <Section bgColor="#FECD87">
+      <Section bgColor="#dfd946">
         <motion.div
           initial={{ opacity: 0, scale: "50%" }}
           whileInView={{ opacity: 1, scale: "100%" }}
@@ -151,7 +151,7 @@ export default function Index() {
           <BodyText>{data[7].body}</BodyText>
         </div>
       </Section>
-      <Section bgColor="#FEF490">
+      <Section bgColor="#d1383b">
         <motion.div
           initial={{ opacity: 0, scale: "0%"}}
           whileInView={{ opacity: 1, scale:"70%", rotate: "360deg" }}
