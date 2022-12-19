@@ -18,7 +18,7 @@ export default function Index() {
           viewport={{ once: false }} 
           className={styles.ponzi}
         >
-          <Image src="/pyramid.png" width={560} height={550} alt="Pastor"/>
+          <Image src="/pyramid.png" width={560} height={550} alt="Pyramid"/>
         </motion.div>
         <motion.div
           initial={{ y: -100 }}
