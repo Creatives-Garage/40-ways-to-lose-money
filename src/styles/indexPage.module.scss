@@ -13,11 +13,13 @@
     @media (max-width: 769px) {
       position: relative;
       right: -50%;
+      bottom: 20%;
     }
 
     @media (max-width: 426px) {
         width: 100%;
         right: 0;
+        bottom: 25%;
         // margin-top: -100px;
         // margin-bottom: 300px;
     }
@@ -26,7 +28,7 @@
 .bodyLeft{
     width: 40%;
     position: absolute;
-    bottom: 30%;
+    bottom: 25%;
     left: 5%;
 
     @media (max-width: 1025px) {
@@ -38,9 +40,11 @@
         position: relative;
         width: 60%;
         left: 0;
+
     }
     @media (max-width: 426px) {
         width: 100%;
+        bottom: 35%;
     }
 }
 
@@ -240,6 +244,147 @@
         width: 50%;
         top: 10%;
         left: -5%;       
+    }
+    @media (max-width: 426px) {
+        position: relative;
+        left: 0;
+        top: 0;
+        margin-bottom: 48px;
+        width: 400px;
+    }
+
+    @media (max-width: 376px) {
+        width: 300px;
+    }
+
+    @media (max-width: 321px) {
+        width: 250px;
+    }        
+}
+
+.house{
+    position: absolute;
+    right: 0px;    
+    top: 0%;
+    z-index: 1;
+
+    @media (max-width: 1120px) {
+        width: 40%;
+        top: 10%;
+        right: 0%;       
+    }
+    @media (max-width: 426px) {
+        position: relative;
+        left: 0;
+        top: 0;
+        margin-bottom: 48px;
+        width: 400px;
+    }
+
+    @media (max-width: 376px) {
+        width: 300px;
+    }
+
+    @media (max-width: 321px) {
+        width: 250px;
+    }        
+}
+
+.multilevel{
+    position: absolute;
+    left: 0px;    
+    top: -5%;
+    z-index: 1;
+
+    @media (max-width: 1120px) {
+        width: 40%;
+        top: 10%;
+        right: 0%;       
+    }
+    @media (max-width: 426px) {
+        position: relative;
+        left: 0;
+        top: 0;
+        margin-bottom: 48px;
+        width: 400px;
+    }
+
+    @media (max-width: 376px) {
+        width: 300px;
+    }
+
+    @media (max-width: 321px) {
+        width: 250px;
+    }        
+}
+
+.patapotea{
+    position: absolute;
+    right: 0px;    
+    top: 5%;
+    z-index: 1;
+
+    @media (max-width: 1120px) {
+        width: 40%;
+        top: 10%;
+        right: 0%;       
+    }
+    @media (max-width: 426px) {
+        position: relative;
+        left: -20px;
+        top: 50px;
+        margin-bottom: 48px;
+        width: 400px;
+    }
+
+    @media (max-width: 376px) {
+        width: 300px;
+    }
+
+    @media (max-width: 321px) {
+        width: 250px;
+    }        
+}
+
+.newspaper{
+    position: absolute;
+    left: 0px;    
+    bottom: -23%;
+    z-index: 1;
+    transform: scale(110%);
+
+    @media (max-width: 1120px) {
+        width: 40%;
+        top: 10%;
+        right: 0%;       
+    }
+    @media (max-width: 426px) {
+        position: relative;
+        left: -20px;
+        top: 50px;
+        margin-bottom: 48px;
+        width: 400px;
+    }
+
+    @media (max-width: 376px) {
+        width: 300px;
+    }
+
+    @media (max-width: 321px) {
+        width: 250px;
+    }        
+}
+
+.multilevel{
+    position: absolute;
+    left: 0px;    
+    top: -5%;
+    z-index: 1;
+
+    @media (max-width: 1120px) {
+        width: 40%;
+        top: 10%;
+        right: 0%;       
     }
     @media (max-width: 426px) {
         position: relative;
