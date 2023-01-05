@@ -54,9 +54,9 @@ export const data = [
         body: "You’ve saved up for years. Butter is a luxury you only see on the television. However, it was worth it, finally you’ve bought the car you’ve always wanted. What’s more, the guy even gave you a discount if you paid in cash! However, before you can even replace that new car smell with your own brand of funk, a car pulls up in front of you on the highway and three burly men pop out and rush towards you. Your car is up for auction, some clever monkey has cloned your log book and used it as security to take out loans from every single digital loan app, SACCO and dodgy logbook loan office on river road ."
     },
     {
-        name: "House Offplan",
+        name: "House Off plan",
         image: "/house.png",
-        header: "BUYING A HOUSE OFFPLAN",
+        header: "BUYING A HOUSE OFF PLAN",
         body: "You’ve saved up for years. Butter is a luxury you only see on the television. However, it was worth it, finally you’ve bought the car you’ve always wanted. What’s more, the guy even gave you a discount if you paid in cash! However, before you can even replace that new car smell with your own brand of funk, a car pulls up in front of you on the highway and three burly men pop out and rush towards you. Your car is up for auction, some clever monkey has cloned your log book and used it as security to take out loans from every single digital loan app, SACCO and dodgy logbook loan office on river road ."
     },
     {
