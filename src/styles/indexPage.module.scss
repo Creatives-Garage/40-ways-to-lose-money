@@ -403,3 +403,30 @@
     }        
 }
 
+.duka{
+    position:absolute;
+    left: -5%;
+    bottom: -26%;
+
+    
+    @media (max-width: 1120px) {
+        width: 40%;
+        top: 10%;
+        right: 0%;       
+    }
+    @media (max-width: 426px) {
+        position: relative;
+        left: 10;
+        margin-bottom: 48px;
+        width: 400px;
+    }
+
+    @media (max-width: 376px) {
+        width: 300px;
+    }
+
+    @media (max-width: 321px) {
+        width: 250px;
+    }  
+}
+

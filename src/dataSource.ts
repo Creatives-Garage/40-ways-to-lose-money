@@ -95,5 +95,17 @@ export const data = [
         header: "USING A PHONE IN TAO",
         body: "“Ke ke keke Wauuuu and then what did she saaaay?”  Fatuma’s story is hilarious! You can’t stop laughing and you keep asking for more details! Situational awareness is something you heard once at a self-defence class which you attended for the gym selfies, not something you practise…while walking…through a sketchy part of town. However, faster than Fatuma can say “she asked me why I was in bed with her husband”, your phone is whisked out of your hands and all you see is a young chap threading through the crowd on Moi Avenue. You lose sight of him before you even get the chance to shout “Mwizi!” "
     },
+    {
+        name: "Naanza Biz",
+        image: "/naanzaBiz.png",
+        header: "USING A PHONE IN TAO",
+        body: "“Ke ke keke Wauuuu and then what did she saaaay?”  Fatuma’s story is hilarious! You can’t stop laughing and you keep asking for more details! Situational awareness is something you heard once at a self-defence class which you attended for the gym selfies, not something you practise…while walking…through a sketchy part of town. However, faster than Fatuma can say “she asked me why I was in bed with her husband”, your phone is whisked out of your hands and all you see is a young chap threading through the crowd on Moi Avenue. You lose sight of him before you even get the chance to shout “Mwizi!” "
+    },
+    {
+        name: "Betting",
+        image: "/betting.png",
+        header: "BETTING",
+        body: "Your first few bets went well. You literally doubled your money! So you get hooked, you buy ‘guaranteed bet tips’ off someone in your estate WhatsApp group, and start spreading the money around. The tips are nonsense, and you’ve lost life savings on a horse race in Bosnia and Herzegovina. Why the guy selling the tips isn&#39;t a millionaire doesn&#39;t occur to you. He seems quite content with making KSh 1000 a week from schmucks like you."
+    },
 ];
 

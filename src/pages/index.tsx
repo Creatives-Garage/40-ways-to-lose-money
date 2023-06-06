@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import styles from "../styles/indexPage.module.scss"
+import styles from "../styles/indexPage.module.scss";
 import Header from "components/Header";
 import Section from "components/Section";
 import BodyText from "components/Body";
@@ -8,6 +8,7 @@ import { data } from "dataSource";
 import { motion, useMotionValue, useTransform } from "framer-motion";
 
 export default function Index() {
+  console.log("Data: ", data)
   return (
     <div className={styles.pageWrapper}>
       <Section bgColor="#c9f414">
@@ -208,7 +209,7 @@ export default function Index() {
           <BodyText>{data[10].body}</BodyText>
         </motion.div>
       </Section>
-      <Section bgColor="#e80591">
+      <Section bgColor="#e9868b">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1}}
@@ -229,7 +230,8 @@ export default function Index() {
           <BodyText>{data[11].body}</BodyText>
         </motion.div>
       </Section>
-      <Section bgColor="#9905E8">
+
+      <Section bgColor="#bfe3aa">
         <motion.div
           initial={{ y: 100 }}
           whileInView={{ y: 0 }}
@@ -247,10 +249,32 @@ export default function Index() {
           viewport={{ once: false }}
           className={styles.newspaper}
         >
-          <Image src="/newspaper.png" width={680} height={800} alt="Pastor" />
+          <Image src={data[12].image} width={680} height={800} alt="Pastor" />
         </motion.div>
       </Section>
-      {/* <Section bgColor="#9905E8">
+      <Section bgColor="#f7ce91">
+        <motion.div
+          initial={{ y: 0 }}
+          whileInView={{ y: 100 }}
+          transition={{ duration: 1.5, stiffness: 10 }}
+          viewport={{ once: false }}
+          className={styles.bodyRight}
+        >
+          <Header level={1}>{data[17].header.toUpperCase()}</Header>
+          <BodyText>{data[17].body}</BodyText>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0,}}
+          whileInView={{ opacity: 1}}
+          transition={{ duration: 2 }}
+          viewport={{ once: false }}
+          className={styles.duka}
+        >
+          <Image src={data[17].image} width={680} height={800} alt="Naanza Biz" />
+        </motion.div>
+      </Section>
+      
+      <Section bgColor="#99e5e3">
         <motion.div
           initial={{ y: 100 }}
           whileInView={{ y: 0 }}
@@ -258,19 +282,19 @@ export default function Index() {
           viewport={{ once: false }}
           className={styles.bodyRight}
         >
-          <Header level={1}>{data[12].header.toUpperCase()}</Header>
-          <BodyText>{data[12].body}</BodyText>
+          <Header level={1}>{data[13].header.toUpperCase()}</Header>
+          <BodyText>{data[13].body}</BodyText>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, scale: 0.1 }}
-          whileInView={{ opacity: 1, scale: 1.1}}
+          initial={{ opacity: 0,}}
+          whileInView={{ opacity: 1}}
           transition={{ duration: 2 }}
           viewport={{ once: false }}
-          className={styles.betting}
+          className={styles.duka}
         >
-          <Image src="/betting.png" width={680} height={800} alt="Pastor" />
+          <Image src={data[13].image} width={680} height={800} alt="Naanza Biz" />
         </motion.div>
-      </Section> */}
+      </Section>
     </div>
   );
 }
