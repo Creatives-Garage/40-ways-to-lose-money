@@ -5,7 +5,7 @@ import Header from "components/Header";
 import Section from "components/Section";
 import BodyText from "components/Body";
 import { data } from "dataSource";
-import { motion, useMotionValue, useTransform } from "framer-motion"
+import { motion, useMotionValue, useTransform } from "framer-motion";
 
 export default function Index() {
   return (
@@ -250,7 +250,7 @@ export default function Index() {
           <Image src="/newspaper.png" width={680} height={800} alt="Pastor" />
         </motion.div>
       </Section>
-      <Section bgColor="#9905E8">
+      {/* <Section bgColor="#9905E8">
         <motion.div
           initial={{ y: 100 }}
           whileInView={{ y: 0 }}
@@ -270,7 +270,7 @@ export default function Index() {
         >
           <Image src="/betting.png" width={680} height={800} alt="Pastor" />
         </motion.div>
-      </Section>
+      </Section> */}
     </div>
   );
 }
