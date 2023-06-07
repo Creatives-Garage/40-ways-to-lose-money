@@ -209,6 +209,7 @@ export default function Index() {
           <BodyText>{data[10].body}</BodyText>
         </motion.div>
       </Section>
+
       <Section bgColor="#e9868b">
         <motion.div
           initial={{ opacity: 0 }}
@@ -258,14 +259,14 @@ export default function Index() {
           whileInView={{ y: 100 }}
           transition={{ duration: 1.5, stiffness: 10 }}
           viewport={{ once: false }}
-          className={styles.bodyRight}
+          className={styles.bodyLeft}
         >
           <Header level={1}>{data[17].header.toUpperCase()}</Header>
           <BodyText>{data[17].body}</BodyText>
         </motion.div>
         <motion.div
           initial={{ opacity: 0,}}
-          whileInView={{ opacity: 1}}
+          whileInView={{ opacity: 1, scale: 1.1}}
           transition={{ duration: 2 }}
           viewport={{ once: false }}
           className={styles.duka}
@@ -290,11 +291,59 @@ export default function Index() {
           whileInView={{ opacity: 1}}
           transition={{ duration: 2 }}
           viewport={{ once: false }}
-          className={styles.duka}
+          className={styles.biz}
         >
           <Image src={data[13].image} width={680} height={800} alt="Naanza Biz" />
         </motion.div>
       </Section>
+
+
+      <Section bgColor="#ebeeb2">
+        <motion.div
+          initial={{ y: 0 }}
+          whileInView={{ y: 100 }}
+          transition={{ duration: 1.5, stiffness: 10 }}
+          viewport={{ once: false }}
+          className={styles.bodyLeft}
+        >
+          <Header level={1}>{data[14].header.toUpperCase()}</Header>
+          <BodyText>{data[14].body}</BodyText>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0,}}
+          whileInView={{ opacity: 1}}
+          transition={{ duration: 2 }}
+          viewport={{ once: false }}
+          className={styles.vote}
+        >
+          <Image src={data[14].image} width={680} height={800} alt="vote" />
+        </motion.div>
+      </Section>
+
+      <Section bgColor="#99e5e3">
+        <motion.div
+          initial={{ y: -1 }}
+          whileInView={{ y: 5 }}
+          transition={{ duration: 1.5, stiffness: 10 }}
+          viewport={{ once: false }}
+          className={styles.bodyRight}
+        >
+          <Header level={1}>{data[15].header.toUpperCase()}</Header>
+          <BodyText>{data[15].body}</BodyText>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0,}}
+          whileInView={{ opacity: 1}}
+          transition={{ duration: 2.5 }}
+          viewport={{ once: false }}
+          className={styles.phone}
+        >
+          <Image src={data[15].image} width={680} height={800} alt="phone" />
+        </motion.div>
+      </Section>
+
+      
+
     </div>
   );
 }
