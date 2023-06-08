@@ -271,7 +271,7 @@ export default function Index() {
           viewport={{ once: false }}
           className={styles.duka}
         >
-          <Image src={data[17].image} width={680} height={800} alt="Naanza Biz" />
+          <Image src={data[17].image} width={595} height={700} alt="Betting" />
         </motion.div>
       </Section>
       
@@ -332,13 +332,13 @@ export default function Index() {
           <BodyText>{data[15].body}</BodyText>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0,}}
-          whileInView={{ opacity: 1}}
+          initial={{ opacity: 0, scale: 0.1}}
+          whileInView={{ opacity: 1, scale: 1}}
           transition={{ duration: 2.5 }}
           viewport={{ once: false }}
           className={styles.phone}
         >
-          <Image src={data[15].image} width={680} height={800} alt="phone" />
+          <Image src={data[15].image} width={640} height={700} alt="phone" />
         </motion.div>
       </Section>
 
