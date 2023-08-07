@@ -139,9 +139,16 @@
 .washwash{
     position: absolute;
     right: 0px;    
-    top: 0px;
+    bottom: 0px;
     z-index: 1;
+    width: 600px;
+    height: 760px;
     
+    @media (max-width: 1501px) {
+        height: 640px;
+        width: 480px;
+        bottom: 14%
+    }
     @media (max-width: 769px) {
         width: 350px;
         height: 400px;
@@ -217,8 +224,10 @@
 .shitstorm{
     position: absolute;
     right: 0px;    
-    top: -15%;
+    // top: -15%;
     z-index: 1;
+    width: 680px;
+    height: 760px;
     
     @media (max-width: 1441px) {
         top: -1%;        
@@ -237,7 +246,7 @@
 .logbook{
     position: absolute;
     left: 0px;    
-    top: 1%;
+    top: 25%;
     z-index: 1;
 
     @media (max-width: 1025px) {
@@ -265,7 +274,7 @@
 .house{
     position: absolute;
     right: 0px;    
-    top: 0%;
+    bottom: -70px;
     z-index: 1;
 
     @media (max-width: 1120px) {
@@ -293,9 +302,15 @@
 .multilevel{
     position: absolute;
     left: 0px;    
-    top: -5%;
+    top: 10%;
     z-index: 1;
+    width: 600px;
+    height: 800px;
 
+    @media (max-width: 1441px) {
+        top: 25%;
+        right: 0%;       
+    }
     @media (max-width: 1120px) {
         width: 40%;
         top: 10%;
@@ -321,7 +336,7 @@
 .patapotea{
     position: absolute;
     right: 0px;    
-    top: 5%;
+    top: 25%;
     z-index: 1;
 
     @media (max-width: 1120px) {
@@ -349,7 +364,7 @@
 .newspaper{
     position: absolute;
     left: 0px;    
-    bottom: -23%;
+    bottom: 0%;
     z-index: 1;
     transform: scale(110%);
 
@@ -406,7 +421,7 @@
 .duka{
     position:absolute;
     right: 0%;
-    bottom: -16%;
+    bottom: 0%;
     
     @media (max-width: 1120px) {
         width: 40%;
@@ -431,7 +446,7 @@
 .biz{
     position:absolute;
     left: 0%;
-    bottom: -40%;
+    bottom: 0%;
     transform: scale(87%);
 
     
@@ -458,16 +473,19 @@
 .vote{
     position: absolute;
     margin-bottom: 2em;
-    right: 0px;    
-    bottom: -32%;
+    right: 10%;    
+    bottom: 0%;
     z-index: 1;
-    transform: scale(65%);
+    width: 480px;
+    // height: 800px;
+    // transform: scale(65%);
 
     @media (max-width: 1120px) {
         width: 40%;
         top: 10%;
         right: 0%;       
     }
+
     @media (max-width: 426px) {
         position: relative;
         left: -20px;
@@ -486,16 +504,25 @@
 }
 .phone{
     position: absolute;
-    left: -2%;   
+    left: 0%;   
     z-index: 2;
-    top: -24%;
-    transform: scale(94%);
+    bottom: 0;
+    width: 680px;
+    height: 800px;
+    // transform: scale(94%);
+
+    @media (max-width: 1441px) {
+        // width: 40%;
+        top: 10%;
+        // right: 0%;       
+    }
 
     @media (max-width: 1120px) {
         width: 40%;
-        top: 10%;
+        bottom: 0;
         right: 0%;       
     }
+
     @media (max-width: 426px) {
         position: relative;
         left: -20px;
