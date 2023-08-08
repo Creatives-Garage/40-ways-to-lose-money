@@ -246,18 +246,20 @@ export default function Index() {
           viewport={{ once: false }}
           className={styles.bodyRight}
         >
-          <Header level={1}>13. {data[12].header.toUpperCase()}</Header>
+          <Header level={1}>13.. {data[12].header.toUpperCase()}</Header>
           <BodyText>{data[12].body}</BodyText>
         </motion.div>
-        <motion.div
+        <motion.img
           initial={{ opacity: 0, scale: 0.1 }}
-          whileInView={{ opacity: 1, scale: 1.1 }}
+          whileInView={{ opacity: 1, scale: 0.9 }}
           transition={{ duration: 2 }}
           viewport={{ once: false }}
+          src={data[12].image}
+          width={680}
+          height={800}
+          alt="Pastor"
           className={styles.newspaper}
-        >
-          <Image src={data[12].image} width={680} height={800} alt="Pastor" />
-        </motion.div>
+        />
       </Section>
       <Section bgColor="#f7ce91">
         <motion.div
@@ -272,7 +274,7 @@ export default function Index() {
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1, scale: 1.1 }}
+          whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 2 }}
           viewport={{ once: false }}
           className={styles.duka}
@@ -292,8 +294,8 @@ export default function Index() {
           <BodyText>{data[13].body}</BodyText>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          initial={{ opacity: 0, y: 0, scale: 0.5 }}
+          whileInView={{ opacity: 1, scale: 0.8, y: 120 }}
           transition={{ duration: 2 }}
           viewport={{ once: false }}
           className={styles.biz}
@@ -346,6 +348,226 @@ export default function Index() {
           className={styles.phone}
         >
           <Image src={data[15].image} width={640} height={700} alt="phone" />
+        </motion.div>
+      </Section>
+
+      <Section bgColor="#DAD199">
+        <motion.img
+          src={data[19].image}
+          alt="phone"
+          className={styles.politician}
+          initial={{ opacity: 0, scale: 0.1 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 2.5 }}
+          viewport={{ once: false }}
+        />
+        <motion.div
+          initial={{ y: -1 }}
+          whileInView={{ y: 5 }}
+          transition={{ duration: 1.5, stiffness: 10 }}
+          viewport={{ once: false }}
+          className={styles.bodyLeft}
+        >
+          <Header level={1}>18. {data[19].header.toUpperCase()}</Header>
+          <BodyText>{data[19].body}</BodyText>
+        </motion.div>
+      </Section>
+
+      <Section bgColor="#DF978B">
+        <motion.img
+          src={data[20].image}
+          alt="phone"
+          className={styles.jaba}
+          initial={{ opacity: 0, scale: 0.1 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 2.5 }}
+          viewport={{ once: false }}
+        />
+        <motion.div
+          initial={{ y: -1 }}
+          whileInView={{ y: 5 }}
+          transition={{ duration: 1.5, stiffness: 10 }}
+          viewport={{ once: false }}
+          className={styles.bodyRight}
+        >
+          <Header level={1}>19. {data[20].header.toUpperCase()}</Header>
+          <BodyText>{data[20].body}</BodyText>
+        </motion.div>
+      </Section>
+
+      <Section bgColor="#BCC67A">
+        <motion.img
+          src={data[21].image}
+          alt="phone"
+          className={styles.refund}
+          initial={{ opacity: 0, scale: 0.1 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 2.5 }}
+          viewport={{ once: false }}
+        />
+        <motion.div
+          initial={{ y: -1 }}
+          whileInView={{ y: 5 }}
+          transition={{ duration: 1.5, stiffness: 10 }}
+          viewport={{ once: false }}
+          className={styles.bodyLeft}
+        >
+          <Header level={1}>20. {data[21].header.toUpperCase()}</Header>
+          <BodyText>{data[21].body}</BodyText>
+        </motion.div>
+      </Section>
+
+      <Section bgColor="#8DB2EA">
+        <motion.img
+          src={data[22].image}
+          alt="phone"
+          className={styles.agent}
+          initial={{ opacity: 0, scale: 0.1 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 2.5 }}
+          viewport={{ once: false }}
+        />
+        <motion.div
+          initial={{ y: -1 }}
+          whileInView={{ y: 5 }}
+          transition={{ duration: 1.5, stiffness: 10 }}
+          viewport={{ once: false }}
+          className={styles.bodyRight}
+        >
+          <Header level={1}>21. {data[22].header.toUpperCase()}</Header>
+          <BodyText>{data[22].body}</BodyText>
+        </motion.div>
+      </Section>
+
+      <Section bgColor="#D6A560">
+        <motion.img
+          src={data[23].image}
+          alt="phone"
+          className={styles.coin}
+          initial={{ rotate: "0deg", opacity: 0, scale: 0.1 }}
+          whileInView={{ rotate: "360deg", opacity: 1, scale: 1 }}
+          transition={{ duration: 2.5, type: "spring" }}
+          viewport={{ once: false }}
+        />
+        <motion.div
+          initial={{ y: -1 }}
+          whileInView={{ y: 5 }}
+          transition={{ duration: 1.5, stiffness: 10 }}
+          viewport={{ once: false }}
+          className={styles.bodyLeft}
+        >
+          <Header level={1}>22. {data[23].header.toUpperCase()}</Header>
+          <BodyText>{data[22].body}</BodyText>
+        </motion.div>
+      </Section>
+
+      <Section bgColor="#D49B97">
+        <motion.img
+          src={data[24].image}
+          alt="phone"
+          className={styles.forex}
+          initial={{ rotate: "0deg", opacity: 0, scale: 0.1 }}
+          whileInView={{ rotate: "360deg", opacity: 1, scale: 1 }}
+          transition={{ duration: 2.5, type: "spring" }}
+          viewport={{ once: false }}
+        />
+        <motion.div
+          initial={{ y: -1 }}
+          whileInView={{ y: 5 }}
+          transition={{ duration: 1.5, stiffness: 10 }}
+          viewport={{ once: false }}
+          className={styles.bodyRight}
+        >
+          <Header level={1}>23. {data[24].header.toUpperCase()}</Header>
+          <BodyText>{data[24].body}</BodyText>
+        </motion.div>
+      </Section>
+
+      <Section bgColor="#78B570">
+        <motion.img
+          src={data[25].image}
+          alt="phone"
+          className={styles.greenHouse}
+          initial={{ rotate: "0deg", opacity: 0, scale: 0.1 }}
+          whileInView={{ rotate: "360deg", opacity: 1, scale: 1 }}
+          transition={{ duration: 2.5, type: "spring" }}
+          viewport={{ once: false }}
+        />
+        <motion.div
+          initial={{ y: -1 }}
+          whileInView={{ y: 5 }}
+          transition={{ duration: 1.5, stiffness: 10 }}
+          viewport={{ once: false }}
+          className={styles.bodyLeft}
+        >
+          <Header level={1}>24. {data[25].header.toUpperCase()}</Header>
+          <BodyText>{data[25].body}</BodyText>
+        </motion.div>
+      </Section>
+
+      <Section bgColor="#4D8AB1">
+        <motion.img
+          src={data[26].image}
+          alt="phone"
+          className={styles.con}
+          initial={{ rotate: "0deg", opacity: 0, scale: 0.1 }}
+          whileInView={{ rotate: "360deg", opacity: 1, scale: 1 }}
+          transition={{ duration: 2.5, type: "spring" }}
+          viewport={{ once: false }}
+        />
+        <motion.div
+          initial={{ y: -1 }}
+          whileInView={{ y: 5 }}
+          transition={{ duration: 1.5, stiffness: 10 }}
+          viewport={{ once: false }}
+          className={styles.bodyRight}
+        >
+          <Header level={1}>25. {data[26].header.toUpperCase()}</Header>
+          <BodyText>{data[26].body}</BodyText>
+        </motion.div>
+      </Section>
+
+      <Section bgColor="#DAD199">
+        <motion.img
+          src={data[27].image}
+          alt="phone"
+          className={styles.online}
+          initial={{ rotate: "0deg", opacity: 0, scale: 0.1 }}
+          whileInView={{ rotate: "360deg", opacity: 1, scale: 1 }}
+          transition={{ duration: 2.5, type: "spring" }}
+          viewport={{ once: false }}
+        />
+        <motion.div
+          initial={{ y: -1 }}
+          whileInView={{ y: 5 }}
+          transition={{ duration: 1.5, stiffness: 10 }}
+          viewport={{ once: false }}
+          className={styles.bodyLeft}
+        >
+          <Header level={1}>26. {data[27].header.toUpperCase()}</Header>
+          <BodyText>{data[27].body}</BodyText>
+        </motion.div>
+      </Section>
+      
+      <Section bgColor="#DAD199">
+        <motion.img
+          src={data[27].image}
+          alt="phone"
+          className={styles.online}
+          initial={{ rotate: "0deg", opacity: 0, scale: 0.1 }}
+          whileInView={{ rotate: "360deg", opacity: 1, scale: 1 }}
+          transition={{ duration: 2.5, type: "spring" }}
+          viewport={{ once: false }}
+        />
+        <motion.div
+          initial={{ y: -1 }}
+          whileInView={{ y: 5 }}
+          transition={{ duration: 1.5, stiffness: 10 }}
+          viewport={{ once: false }}
+          className={styles.bodyLeft}
+        >
+          <Header level={1}>26. {data[27].header.toUpperCase()}</Header>
+          <BodyText>{data[27].body}</BodyText>
         </motion.div>
       </Section>
     </div>
