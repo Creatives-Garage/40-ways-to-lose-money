@@ -532,8 +532,8 @@ export default function Index() {
           src={data[27].image}
           alt="phone"
           className={styles.online}
-          initial={{ rotate: "0deg", opacity: 0, scale: 0.1 }}
-          whileInView={{ rotate: "360deg", opacity: 1, scale: 1 }}
+          initial={{ y: -150, opacity: 0, scale: 0.1 }}
+          whileInView={{ y: 0, opacity: 1, scale: 1 }}
           transition={{ duration: 2.5, type: "spring" }}
           viewport={{ once: false }}
         />
@@ -548,14 +548,36 @@ export default function Index() {
           <BodyText>{data[27].body}</BodyText>
         </motion.div>
       </Section>
-      
-      <Section bgColor="#DAD199">
+
+      <Section bgColor="#F4AA73">
         <motion.img
-          src={data[27].image}
+          src={data[28].image}
           alt="phone"
-          className={styles.online}
-          initial={{ rotate: "0deg", opacity: 0, scale: 0.1 }}
-          whileInView={{ rotate: "360deg", opacity: 1, scale: 1 }}
+          className={styles.advancePayment}
+          initial={{ opacity: 0, scale: 0.1 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 2.5, type: "spring" }}
+          viewport={{ once: false }}
+        />
+        <motion.div
+          initial={{ y: -1 }}
+          whileInView={{ y: 5 }}
+          transition={{ duration: 1.5, stiffness: 10 }}
+          viewport={{ once: false }}
+          className={styles.bodyRight}
+        >
+          <Header level={1}>27. {data[28].header.toUpperCase()}</Header>
+          <BodyText>{data[28].body}</BodyText>
+        </motion.div>
+      </Section>
+
+      <Section bgColor="#D984B6">
+        <motion.img
+          src={data[29].image}
+          alt="phone"
+          className={styles.nitakurudishia}
+          initial={{ opacity: 0, scale: 0.1 }}
+          whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 2.5, type: "spring" }}
           viewport={{ once: false }}
         />
@@ -566,8 +588,8 @@ export default function Index() {
           viewport={{ once: false }}
           className={styles.bodyLeft}
         >
-          <Header level={1}>26. {data[27].header.toUpperCase()}</Header>
-          <BodyText>{data[27].body}</BodyText>
+          <Header level={1}>28. {data[29].header.toUpperCase()}</Header>
+          <BodyText>{data[29].body}</BodyText>
         </motion.div>
       </Section>
     </div>

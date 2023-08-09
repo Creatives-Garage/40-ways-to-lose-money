@@ -1,19 +1,19 @@
 @import "./variables/index.scss";
 
-.pageWrapper{
+.pageWrapper {
     overflow-x: hidden;
 }
 
-.bodyRight{
+.bodyRight {
     width: 50%;
     position: absolute;
     bottom: 25%;
     right: 5%;
 
     @media (max-width: 769px) {
-      position: relative;
-      right: -50%;
-      bottom: 20%;
+        position: relative;
+        right: -50%;
+        bottom: 20%;
     }
 
     @media (max-width: 426px) {
@@ -25,7 +25,7 @@
     }
 }
 
-.bodyLeft{
+.bodyLeft {
     width: 40%;
     position: absolute;
     bottom: 25%;
@@ -33,36 +33,38 @@
 
     @media (max-width: 1025px) {
         width: 45%;
-        bottom: 20%;        
+        bottom: 20%;
     }
-    
+
     @media (max-width: 769px) {
         position: relative;
         width: 60%;
         left: 0;
 
     }
+
     @media (max-width: 426px) {
         width: 100%;
         bottom: 35%;
     }
 }
 
-.ponzi{
+.ponzi {
     position: absolute;
-    left: 0px;    
-    bottom: -60px;
+    left: 0px;
+    bottom: 0px;
     z-index: 1;
+
     @media (max-width: 1441px) {
-        bottom: -84px;        
+        bottom: -84px;
     }
 
     @media (max-width: 1025px) {
         bottom: 150px;
         width: 450px;
-        height: 600px;        
+        height: 600px;
     }
-    
+
     @media (max-width: 769px) {
         width: 350px;
         height: 200px;
@@ -76,16 +78,16 @@
         height: 100px;
         top: 0px;
         margin-bottom: 100px;
-    }    
+    }
 }
 
-.pastor{
+.pastor {
     position: absolute;
-    right: 0px;    
+    right: 0px;
     bottom: -10px;
-    
+
     @media (max-width: 1441px) {
-        right: 0%;        
+        right: 0%;
     }
 
     @media (max-width: 769px) {
@@ -105,21 +107,22 @@
     }
 }
 
-.luthuli{
+.luthuli {
     position: absolute;
-    left: 0px;    
+    left: 0px;
     bottom: -60px;
     z-index: 1;
+
     @media (max-width: 1441px) {
-        bottom: -84px;        
+        bottom: -84px;
     }
 
     @media (max-width: 1025px) {
         bottom: 150px;
         width: 450px;
-        height: 600px;        
+        height: 600px;
     }
-    
+
     @media (max-width: 769px) {
         width: 350px;
         height: 200px;
@@ -136,76 +139,84 @@
     }
 }
 
-.washwash{
+.washwash {
     position: absolute;
-    right: 0px;    
+    right: 0px;
     bottom: 0px;
     z-index: 1;
     width: 600px;
     height: 760px;
-    
+
     @media (max-width: 1501px) {
         height: 640px;
         width: 480px;
         bottom: 14%
     }
+
     @media (max-width: 769px) {
         width: 350px;
         height: 400px;
         top: 150px;
     }
+
     @media (max-width: 426px) {
         position: static;
         top: -100px;
         right: 0;
         margin-bottom: 54px;
     }
+
     @media (max-width: 321px) {
         width: 250px;
         margin-bottom: 24px;
     }
 }
 
-.nywele{
+.nywele {
     position: absolute;
-    left: 0px;    
+    left: 0px;
     bottom: -5px;
     z-index: 1;
+
     @media (max-width: 1025px) {
         left: -12%;
-    }    
+    }
+
     @media (max-width: 769px) {
         left: -22%;
     }
+
     @media (max-width: 426px) {
         position: static;
         bottom: 0;
         margin-bottom: -60px;
-    }    
+    }
 }
 
-.ben10{
+.ben10 {
     position: absolute;
-    right: 0px;    
+    right: 0px;
     bottom: -5px;
     z-index: 1;
+
     @media (max-width: 1025px) {
         bottom: 0px;
-    } 
+    }
+
     @media (max-width: 426px) {
         position: relative;
         bottom: 0px;
         left: 0;
         margin-bottom: 0px;
-    }   
+    }
 }
 
-.iphone{
+.iphone {
     position: absolute;
-    left: 0px;    
+    left: 0px;
     bottom: -5px;
     z-index: 1;
-    
+
     @media (max-width: 1025px) {
         left: -12%;
     }
@@ -217,43 +228,46 @@
     @media (max-width: 426px) {
         position: static;
         left: 20%;
-        bottom: -50px;        
+        bottom: -50px;
     }
 }
 
-.shitstorm{
+.shitstorm {
     position: absolute;
-    right: 0px;    
+    right: 0px;
     // top: -15%;
     z-index: 1;
     width: 680px;
     height: 760px;
-    
+
     @media (max-width: 1441px) {
-        top: -1%;        
+        top: -1%;
     }
+
     @media (max-width: 1025px) {
-        top: -10%;        
-        right: 0;        
+        top: -10%;
+        right: 0;
     }
+
     @media (max-width: 426px) {
         position: relative;
         top: 0px;
-        margin-top: -50px;        
+        margin-top: -50px;
     }
 }
 
-.logbook{
+.logbook {
     position: absolute;
-    left: 0px;    
+    left: 0px;
     top: 25%;
     z-index: 1;
 
     @media (max-width: 1025px) {
         width: 50%;
         top: 10%;
-        left: -5%;       
+        left: -5%;
     }
+
     @media (max-width: 426px) {
         position: relative;
         left: 0;
@@ -268,20 +282,21 @@
 
     @media (max-width: 321px) {
         width: 250px;
-    }        
+    }
 }
 
-.house{
+.house {
     position: absolute;
-    right: 0px;    
+    right: 0px;
     bottom: -70px;
     z-index: 1;
 
     @media (max-width: 1120px) {
         width: 40%;
         top: 10%;
-        right: 0%;       
+        right: 0%;
     }
+
     @media (max-width: 426px) {
         position: relative;
         left: 0;
@@ -296,12 +311,12 @@
 
     @media (max-width: 321px) {
         width: 250px;
-    }        
+    }
 }
 
-.multilevel{
+.multilevel {
     position: absolute;
-    left: 0px;    
+    left: 0px;
     top: 10%;
     z-index: 1;
     width: 600px;
@@ -309,13 +324,15 @@
 
     @media (max-width: 1441px) {
         top: 25%;
-        right: 0%;       
+        right: 0%;
     }
+
     @media (max-width: 1120px) {
         width: 40%;
         top: 10%;
-        right: 0%;       
+        right: 0%;
     }
+
     @media (max-width: 426px) {
         position: relative;
         left: 0;
@@ -330,20 +347,21 @@
 
     @media (max-width: 321px) {
         width: 250px;
-    }        
+    }
 }
 
-.patapotea{
+.patapotea {
     position: absolute;
-    right: 0px;    
+    right: 0px;
     top: 25%;
     z-index: 1;
 
     @media (max-width: 1120px) {
         width: 40%;
         top: 10%;
-        right: 0%;       
+        right: 0%;
     }
+
     @media (max-width: 426px) {
         position: relative;
         left: -20px;
@@ -358,12 +376,12 @@
 
     @media (max-width: 321px) {
         width: 250px;
-    }        
+    }
 }
 
-.newspaper{
+.newspaper {
     position: absolute;
-    left: 0px;    
+    left: 0px;
     bottom: 0%;
     z-index: 1;
     transform: scale(110%);
@@ -371,8 +389,9 @@
     @media (max-width: 1120px) {
         width: 40%;
         top: 10%;
-        right: 0%;       
+        right: 0%;
     }
+
     @media (max-width: 426px) {
         position: relative;
         left: -20px;
@@ -387,20 +406,21 @@
 
     @media (max-width: 321px) {
         width: 250px;
-    }        
+    }
 }
 
-.multilevel{
+.multilevel {
     position: absolute;
-    left: 0px;    
+    left: 0px;
     top: -5%;
     z-index: 1;
 
     @media (max-width: 1120px) {
         width: 40%;
         top: 10%;
-        right: 0%;       
+        right: 0%;
     }
+
     @media (max-width: 426px) {
         position: relative;
         left: 0;
@@ -415,19 +435,20 @@
 
     @media (max-width: 321px) {
         width: 250px;
-    }        
+    }
 }
 
-.duka{
-    position:absolute;
+.duka {
+    position: absolute;
     right: 0%;
     bottom: 0%;
-    
+
     @media (max-width: 1120px) {
         width: 40%;
         top: 10%;
-        right: 0%;       
+        right: 0%;
     }
+
     @media (max-width: 426px) {
         position: relative;
         left: 10;
@@ -441,21 +462,22 @@
 
     @media (max-width: 321px) {
         width: 250px;
-    }  
+    }
 }
 
-.biz{
-    position:absolute;
+.biz {
+    position: absolute;
     left: 0%;
     bottom: 0%;
     transform: scale(87%);
 
-    
+
     @media (max-width: 1120px) {
         width: 40%;
         top: 10%;
-        right: 0%;       
+        right: 0%;
     }
+
     @media (max-width: 426px) {
         position: relative;
         left: 10;
@@ -469,23 +491,23 @@
 
     @media (max-width: 321px) {
         width: 250px;
-    }  
+    }
 }
 
-.vote{
+.vote {
     position: absolute;
     margin-bottom: 2em;
-    right: 10%;    
-    bottom: 0%;
+    right: 10%;
+    bottom: 7%;
     z-index: 1;
-    width: 480px;
+    width: 400px;
     // height: 800px;
     // transform: scale(65%);
 
     @media (max-width: 1120px) {
         width: 40%;
         top: 10%;
-        right: 0%;       
+        right: 0%;
     }
 
     @media (max-width: 426px) {
@@ -502,12 +524,12 @@
 
     @media (max-width: 321px) {
         width: 250px;
-    }        
+    }
 }
 
-.phone{
+.phone {
     position: absolute;
-    left: 0%;   
+    left: 0%;
     z-index: 2;
     bottom: 0;
     width: 680px;
@@ -523,7 +545,7 @@
     @media (max-width: 1120px) {
         width: 40%;
         bottom: 0;
-        right: 0%;       
+        right: 0%;
     }
 
     @media (max-width: 426px) {
@@ -540,12 +562,12 @@
 
     @media (max-width: 321px) {
         width: 250px;
-    }        
+    }
 }
 
-.politician{
+.politician {
     position: absolute;
-    right: 5%;   
+    right: 5%;
     z-index: 2;
     top: 5%;
     width: 400px;
@@ -554,14 +576,16 @@
 
     @media (max-width: 1441px) {
         // width: 40%;
-        top: 10%;
+        top: 0%;
+        width: 320px;
+        height: 700px;
         // right: 0%;       
     }
 
     @media (max-width: 1120px) {
         width: 40%;
         bottom: 0;
-        right: 0%;       
+        right: 0%;
     }
 
     @media (max-width: 426px) {
@@ -578,12 +602,12 @@
 
     @media (max-width: 321px) {
         width: 250px;
-    }        
+    }
 }
 
-.jaba{
+.jaba {
     position: absolute;
-    left: 0%;   
+    left: 0%;
     z-index: 2;
     bottom: 0%;
     width: 756px;
@@ -592,14 +616,15 @@
 
     @media (max-width: 1441px) {
         // width: 40%;
-        top: 10%;
-        // right: 0%;       
+        // right: 0%;
+        width: 600px;
+        height: 440px
     }
 
     @media (max-width: 1120px) {
         width: 40%;
         bottom: 0;
-        right: 0%;       
+        right: 0%;
     }
 
     @media (max-width: 426px) {
@@ -616,12 +641,12 @@
 
     @media (max-width: 321px) {
         width: 250px;
-    }        
+    }
 }
 
-.refund{
+.refund {
     position: absolute;
-    right: 10%;   
+    right: 10%;
     z-index: 2;
     top: 25%;
     // width: 400px;
@@ -630,14 +655,14 @@
 
     @media (max-width: 1441px) {
         // width: 40%;
-        top: 10%;
+        top: 20%;
         // right: 0%;       
     }
 
     @media (max-width: 1120px) {
         width: 40%;
         bottom: 0;
-        right: 0%;       
+        right: 0%;
     }
 
     @media (max-width: 426px) {
@@ -654,12 +679,12 @@
 
     @media (max-width: 321px) {
         width: 250px;
-    }        
+    }
 }
 
-.agent{
+.agent {
     position: absolute;
-    left: 0%;   
+    left: 0%;
     z-index: 2;
     bottom: 0%;
     // width: 400px;
@@ -668,14 +693,13 @@
 
     @media (max-width: 1441px) {
         // width: 40%;
-        top: 10%;
         // right: 0%;       
     }
 
     @media (max-width: 1120px) {
         width: 40%;
         bottom: 0;
-        right: 0%;       
+        right: 0%;
     }
 
     @media (max-width: 426px) {
@@ -692,12 +716,12 @@
 
     @media (max-width: 321px) {
         width: 250px;
-    }        
+    }
 }
 
-.coin{
+.coin {
     position: absolute;
-    right: 5%;   
+    right: 5%;
     z-index: 2;
     top: 10%;
     // width: 400px;
@@ -706,14 +730,14 @@
 
     @media (max-width: 1441px) {
         // width: 40%;
-        top: 10%;
+        top: 25%;
         // right: 0%;       
     }
 
     @media (max-width: 1120px) {
         width: 40%;
         bottom: 0;
-        right: 0%;       
+        right: 0%;
     }
 
     @media (max-width: 426px) {
@@ -730,12 +754,12 @@
 
     @media (max-width: 321px) {
         width: 250px;
-    }        
+    }
 }
 
-.forex{
+.forex {
     position: absolute;
-    left: 2%;   
+    left: 2%;
     z-index: 2;
     bottom: 0%;
     // width: 400px;
@@ -744,14 +768,13 @@
 
     @media (max-width: 1441px) {
         // width: 40%;
-        top: 10%;
         // right: 0%;       
     }
 
     @media (max-width: 1120px) {
         width: 40%;
         bottom: 0;
-        right: 0%;       
+        right: 0%;
     }
 
     @media (max-width: 426px) {
@@ -768,12 +791,12 @@
 
     @media (max-width: 321px) {
         width: 250px;
-    }        
+    }
 }
 
-.greenHouse{
+.greenHouse {
     position: absolute;
-    right: 2%;   
+    right: 2%;
     z-index: 2;
     bottom: 0%;
     // width: 400px;
@@ -782,14 +805,14 @@
 
     @media (max-width: 1441px) {
         // width: 40%;
-        top: 10%;
-        // right: 0%;       
+        // right: 0%;
+        height: 50%;
     }
 
     @media (max-width: 1120px) {
         width: 40%;
         bottom: 0;
-        right: 0%;       
+        right: 0%;
     }
 
     @media (max-width: 426px) {
@@ -806,12 +829,12 @@
 
     @media (max-width: 321px) {
         width: 250px;
-    }        
+    }
 }
 
-.con{
+.con {
     position: absolute;
-    left: 4%;   
+    left: 4%;
     z-index: 2;
     top: 20%;
     // width: 400px;
@@ -820,14 +843,14 @@
 
     @media (max-width: 1441px) {
         // width: 40%;
-        top: 10%;
+        top: 25%;
         // right: 0%;       
     }
 
     @media (max-width: 1120px) {
         width: 40%;
         bottom: 0;
-        right: 0%;       
+        right: 0%;
     }
 
     @media (max-width: 426px) {
@@ -844,12 +867,12 @@
 
     @media (max-width: 321px) {
         width: 250px;
-    }        
+    }
 }
 
-.online{
+.online {
     position: absolute;
-    right: 4%;   
+    right: 4%;
     z-index: 2;
     bottom: 0%;
     // width: 400px;
@@ -858,14 +881,13 @@
 
     @media (max-width: 1441px) {
         // width: 40%;
-        top: 10%;
         // right: 0%;       
     }
 
     @media (max-width: 1120px) {
         width: 40%;
         bottom: 0;
-        right: 0%;       
+        right: 0%;
     }
 
     @media (max-width: 426px) {
@@ -882,5 +904,79 @@
 
     @media (max-width: 321px) {
         width: 250px;
-    }        
+    }
+}
+
+.advancePayment {
+    position: absolute;
+    left: 4%;
+    z-index: 2;
+    bottom: 30%;
+    // width: 400px;
+    height: 35%;
+    // transform: scale(94%);
+
+    @media (max-width: 1441px) {
+        // width: 40%;
+        // right: 0%;       
+    }
+
+    @media (max-width: 1120px) {
+        width: 40%;
+        bottom: 0;
+        right: 0%;
+    }
+
+    @media (max-width: 426px) {
+        position: relative;
+        left: -20px;
+        top: 50px;
+        margin-bottom: 48px;
+        width: 400px;
+    }
+
+    @media (max-width: 376px) {
+        width: 300px;
+    }
+
+    @media (max-width: 321px) {
+        width: 250px;
+    }
+}
+
+.nitakurudishia {
+    position: absolute;
+    right: 4%;
+    z-index: 2;
+    bottom: 10%;
+    // width: 400px;
+    height: 60%;
+    // transform: scale(94%);
+
+    @media (max-width: 1441px) {
+        // width: 40%;
+        // right: 0%;       
+    }
+
+    @media (max-width: 1120px) {
+        width: 40%;
+        bottom: 0;
+        right: 0%;
+    }
+
+    @media (max-width: 426px) {
+        position: relative;
+        left: -20px;
+        top: 50px;
+        margin-bottom: 48px;
+        width: 400px;
+    }
+
+    @media (max-width: 376px) {
+        width: 300px;
+    }
+
+    @media (max-width: 321px) {
+        width: 250px;
+    }
 }
