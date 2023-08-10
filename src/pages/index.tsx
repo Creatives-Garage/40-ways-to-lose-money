@@ -457,7 +457,7 @@ export default function Index() {
           className={styles.bodyLeft}
         >
           <Header level={1}>22. {data[23].header.toUpperCase()}</Header>
-          <BodyText>{data[22].body}</BodyText>
+          <BodyText>{data[23].body}</BodyText>
         </motion.div>
       </Section>
 
@@ -590,6 +590,94 @@ export default function Index() {
         >
           <Header level={1}>28. {data[29].header.toUpperCase()}</Header>
           <BodyText>{data[29].body}</BodyText>
+        </motion.div>
+      </Section>
+
+      <Section bgColor="#E9C7A8">
+        <motion.img
+          src={data[30].image}
+          alt="phone"
+          className={styles.lostIdLoans}
+          initial={{ opacity: 0, scale: 0.1 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 2.5, type: "spring" }}
+          viewport={{ once: false }}
+        />
+        <motion.div
+          initial={{ y: -1 }}
+          whileInView={{ y: 5 }}
+          transition={{ duration: 1.5, stiffness: 10 }}
+          viewport={{ once: false }}
+          className={styles.bodyRight}
+        >
+          <Header level={1}>29. {data[30].header.toUpperCase()}</Header>
+          <BodyText>{data[30].body}</BodyText>
+        </motion.div>
+      </Section>
+
+      <Section bgColor="#EFE5A1">
+        <motion.img
+          src={data[31].image}
+          alt="phone"
+          className={styles.roadsideChurches}
+          initial={{ opacity: 0, scale: 0.1 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 2.5, type: "spring" }}
+          viewport={{ once: false }}
+        />
+        <motion.div
+          initial={{ y: -1 }}
+          whileInView={{ y: 5 }}
+          transition={{ duration: 1.5, stiffness: 10 }}
+          viewport={{ once: false }}
+          className={styles.bodyLeft}
+        >
+          <Header level={1}>30. {data[31].header.toUpperCase()}</Header>
+          <BodyText>{data[31].body}</BodyText>
+        </motion.div>
+      </Section>
+
+      <Section bgColor="#6FACCD">
+        <motion.img
+          src={data[32].image}
+          alt="phone"
+          className={styles.mganga}
+          initial={{ opacity: 0, scale: 0.1 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 2.5, type: "spring" }}
+          viewport={{ once: false }}
+        />
+        <motion.div
+          initial={{ y: -1 }}
+          whileInView={{ y: 5 }}
+          transition={{ duration: 1.5, stiffness: 10 }}
+          viewport={{ once: false }}
+          className={styles.bodyRight}
+        >
+          <Header level={1}>31. {data[32].header.toUpperCase()}</Header>
+          <BodyText>{data[32].body}</BodyText>
+        </motion.div>
+      </Section>
+
+      <Section bgColor="#D79193">
+        <motion.img
+          src={data[33].image}
+          alt="phone"
+          className={styles.scamBook}
+          initial={{ opacity: 0, scale: 0.1 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 2.5, type: "spring" }}
+          viewport={{ once: false }}
+        />
+        <motion.div
+          initial={{ y: -1 }}
+          whileInView={{ y: 5 }}
+          transition={{ duration: 1.5, stiffness: 10 }}
+          viewport={{ once: false }}
+          className={styles.bodyLeft}
+        >
+          <Header level={1}>40. {data[33].header.toUpperCase()}</Header>
+          <BodyText>{data[33].body}</BodyText>
         </motion.div>
       </Section>
     </div>
