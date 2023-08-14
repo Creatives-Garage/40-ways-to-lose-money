@@ -152,26 +152,6 @@ export default function Index() {
           </motion.div>
         </div>
       </div>
-
-      {/* <Section bgColor="yellow">
-        <div className={styles.home}>
-          <motion.img
-            initial={{
-              scale: 0.1,
-            }}
-            animate={{
-              scale: 1,
-            }}
-            transition={{
-              ease: "easeInOut",
-              duration: 2,
-            }}
-            src="/homepage.png"
-            alt="home"
-            className={styles.homeImg}
-          />
-        </div>
-      </Section> */}
       <Section bgColor="#c9f414">
         <motion.div
           initial={{ y: 100 }}
@@ -265,10 +245,17 @@ export default function Index() {
         >
           <Image src="/shuka.png" width={600} height={760} alt="Shuka" />
         </motion.div>
-        <div className={styles.bodyRight}>
+        <motion.div
+         initial={{
+          y: 0
+         }}
+         whileInView={{
+          y: -145
+         }}
+         className={styles.bodyRight}>
           <Header level={5} data={data[4].header.toUpperCase()} />
           <BodyText>{data[4].body}</BodyText>
-        </div>
+        </motion.div>
       </Section>
       <Section bgColor="#329dad">
         <motion.div
@@ -390,7 +377,7 @@ export default function Index() {
         </motion.div>
         <motion.div
           initial={{ y: 50 }}
-          whileInView={{ y: 0 }}
+          whileInView={{ y: -10 }}
           transition={{ duration: 1.5, stiffness: 10 }}
           viewport={{ once: false }}
           className={styles.bodyLeft}

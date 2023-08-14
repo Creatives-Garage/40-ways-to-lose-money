@@ -39,8 +39,8 @@
     // height: 70%;
     // width: 42%;
 
-    @media (max-width: 1441px) {
-        // transform: scale(70%);        
+    @media (max-width: 429px) {
+        transform: scale(60%);        
     }
 }
 
@@ -109,12 +109,20 @@
     justify-content: flex-end;
 }
 
+.moneyIn{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
 .money{
     font-size: 64px;
 }
 
 .in{
     font-size: 40px;
+    text-align: right;
+    margin-top: -16px;
 }
 
 .nairobi{
@@ -161,9 +169,10 @@
     }
 
     @media (max-width: 426px) {
-        width: 100%;
+        position: absolute;
+        width: 95%;
         right: 0;
-        bottom: 25%;
+        bottom: 35%        
         // margin-top: -100px;
         // margin-bottom: 300px;
     }
@@ -184,12 +193,13 @@
         position: relative;
         width: 60%;
         left: 0;
-
     }
 
     @media (max-width: 426px) {
-        width: 100%;
-        bottom: 35%;
+        position: absolute;
+        width: 95%;
+        bottom: 45%;
+        left: 2%;
     }
 }
 
@@ -243,7 +253,9 @@
     @media (max-width: 426px) {
         position: relative;
         margin-top: 132px;
-        margin-bottom: 72px;
+        // margin-bottom: 72px;
+        bottom: -30%;
+        transform: scale(50%);
     }
 
     @media (max-width: 321px) {
@@ -270,15 +282,13 @@
     @media (max-width: 769px) {
         width: 350px;
         height: 200px;
-        top: 50px;
         right: 400px;
     }
 
     @media (max-width: 426px) {
-        position: relative;
+        bottom: 4%;
         width: 300px;
         height: 100px;
-        top: -100px;
         margin-bottom: 240px;
     }
 }
@@ -304,10 +314,9 @@
     }
 
     @media (max-width: 426px) {
-        position: static;
-        top: -100px;
-        right: 0;
-        margin-bottom: 54px;
+        top: 440px;
+        right: -15%;
+        margin-bottom: 0;
     }
 
     @media (max-width: 321px) {
@@ -394,9 +403,10 @@
     }
 
     @media (max-width: 426px) {
-        position: relative;
-        top: 0px;
+        top: 60%;
         margin-top: -50px;
+        width: auto;
+        height: 400px;
     }
 }
 
@@ -413,9 +423,7 @@
     }
 
     @media (max-width: 426px) {
-        position: relative;
-        left: 0;
-        top: 0;
+        top: 60%;
         margin-bottom: 48px;
         width: 400px;
     }
@@ -437,15 +445,11 @@
 
     @media (max-width: 1120px) {
         width: 40%;
-        top: 10%;
         right: 0%;
     }
 
     @media (max-width: 426px) {
-        position: relative;
-        left: 0;
-        top: 0;
-        margin-bottom: 48px;
+        bottom: -5%;
         width: 400px;
     }
 
@@ -478,11 +482,9 @@
     }
 
     @media (max-width: 426px) {
-        position: relative;
-        left: 0;
-        top: 0;
-        margin-bottom: 48px;
-        width: 400px;
+        height: auto;
+        width: 120px;
+        top: 100%;
     }
 
     @media (max-width: 376px) {
@@ -507,11 +509,9 @@
     }
 
     @media (max-width: 426px) {
-        position: relative;
-        left: -20px;
-        top: 50px;
-        margin-bottom: 48px;
-        width: 400px;
+        width: 300px;
+        top: 55%;
+        right: 15%;
     }
 
     @media (max-width: 376px) {
@@ -537,11 +537,7 @@
     }
 
     @media (max-width: 426px) {
-        position: relative;
-        left: -20px;
-        top: 50px;
-        margin-bottom: 48px;
-        width: 400px;
+        
     }
 
     @media (max-width: 376px) {
@@ -562,15 +558,12 @@
     @media (max-width: 1120px) {
         width: 40%;
         top: 10%;
-        right: 0%;
     }
 
     @media (max-width: 426px) {
-        position: relative;
-        left: 0;
-        top: 0;
-        margin-bottom: 48px;
-        width: 400px;
+        width: 300px;
+        top: 55%;
+        left: 20%;
     }
 
     @media (max-width: 376px) {
