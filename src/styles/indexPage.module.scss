@@ -24,6 +24,122 @@
     z-index: 4;
 }
 
+.coverPageWrapper{
+    height: 100vh;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.coverPage{
+    font-family: Bebas Neue;
+    color:#0A41BF;
+    position: relative;
+    // height: 70%;
+    // width: 42%;
+
+    @media (max-width: 1441px) {
+        // transform: scale(70%);        
+    }
+}
+
+.topPart{
+    display: flex;
+    gap: 20px;
+    height: 70%;
+    // border: 1px solid red;
+    align-items: flex-end;
+}
+
+.forty {
+    font-size: 440px;
+    line-height: 84%;
+
+    @media (max-width: 1441px) {
+        font-size: 320px;
+    }
+}
+
+.waysToLose{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 2px;
+    // margin-bottom: -64px;
+}
+
+.waysTo {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    // margin-top: -400px;
+}
+
+.ways{
+    font-size: 132px;
+        @media (max-width: 1441px) {
+                font-size: 64px;
+            }
+}
+
+.to{
+    font-size: 48px;
+            @media (max-width: 1441px) {
+                    font-size: 32px;
+                }
+}
+
+.lose{
+    font-size: 280px;
+    line-height: 80%;
+    text-align: end;
+        @media (max-width: 1441px) {
+                font-size: 240px;
+            }
+}
+
+.middlePart{
+    display: flex;
+    align-items: top;
+    // margin-top: -64px;
+    gap: 20px;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.money{
+    font-size: 64px;
+}
+
+.in{
+    font-size: 40px;
+}
+
+.nairobi{
+    font-size: 240px;
+    line-height: 90%;
+    letter-spacing: 8px;
+
+        @media (max-width: 1441px) {
+                font-size: 160px;
+            }
+}
+
+.coverFooter{
+    display: flex;
+    justify-content: flex-end;
+    font-family: Coco Goose;
+    font-size: 24px;
+    font-weight: 300;
+    margin-top: 24px;
+
+            @media (max-width: 1441px) {
+                    font-size: 20px;
+                }
+}
+
 .home{
     width: 100%;
     height: 100%;
@@ -1173,7 +1289,6 @@
     position: absolute;
     width: 100%;
     top: 0;
-    background-color: blue;
     z-index: 2;
     height: 148px;
     display: flex;

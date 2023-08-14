@@ -12,10 +12,148 @@ export default function Index() {
   console.log("Data: ", scrollYProgress);
   return (
     <div className={styles.pageWrapper}>
-      <motion.div style={{scaleX: scrollYProgress}} className={styles.progressTracker}/>
-      {/* <div classname></div> */}
+      <motion.div
+        style={{ scaleX: scrollYProgress }}
+        className={styles.progressTracker}
+      />
 
-      <Section bgColor="yellow">
+      <div className={styles.coverPageWrapper}>
+        <div className={styles.coverPage}>
+          <div className={styles.topPart}>
+            <motion.div
+              initial={{ scale: 0 }}
+              animate={{ scale: 1 }}
+              transition={{
+                duration: 15,
+                type: "spring",
+                stiffness: 50,
+                delay: 1,
+              }}
+              className={styles.forty}
+            >
+              40
+            </motion.div>
+            <div className={styles.waysToLose}>
+              <div className={styles.waysTo}>
+                <motion.div
+                  initial={{
+                    opacity: 0,
+                  }}
+                  animate={{
+                    opacity: 1,
+                  }}
+                  transition={{
+                    duration: 5,
+                    type: "spring",
+                    stiffness: 50,
+                    delay: 2,
+                  }}
+                  className={styles.ways}
+                >
+                  WAYS
+                </motion.div>
+                <motion.div
+                  initial={{
+                    x: 200,
+                    opacity: 0,
+                  }}
+                  animate={{
+                    x: 0,
+                    opacity: 1,
+                  }}
+                  transition={{
+                    duration: 5,
+                    type: "spring",
+                    stiffness: 50,
+                    delay: 3,
+                  }}
+                  className={styles.to}
+                >
+                  TO
+                </motion.div>
+              </div>
+              <motion.div
+                initial={{
+                  scale: 0,
+                }}
+                animate={{
+                  x: 0,
+                  scale: 1,
+                }}
+                transition={{
+                  duration: 5,
+                  type: "spring",
+                  stiffness: 50,
+                  delay: 4,
+                }}
+                className={styles.lose}
+              >
+                LOSE
+              </motion.div>
+            </div>
+          </div>
+          <div className={styles.middlePart}>
+            <motion.div
+              initial={{
+                x: -200,
+                opacity: 0,
+              }}
+              animate={{
+                x: 0,
+                opacity: 1,
+              }}
+              transition={{
+                duration: 5,
+                type: "spring",
+                stiffness: 50,
+                delay: 5,
+              }}
+              className={styles.moneyIn}
+            >
+              <motion.div className={styles.money}>MONEY</motion.div>
+              <div className={styles.in}>IN</div>
+            </motion.div>
+            <motion.div
+              initial={{
+                scale: 0,
+              }}
+              animate={{
+                scale: 1,
+              }}
+              transition={{
+                duration: 5,
+                type: "spring",
+                stiffness: 50,
+                delay: 6,
+              }}
+              className={styles.nairobi}
+            >
+              NAIROBI
+            </motion.div>
+          </div>
+          <motion.div
+            initial={{
+              x: -200,
+              opacity: 0,
+            }}
+            animate={{
+              x: 0,
+              opacity: 1,
+            }}
+            transition={{
+              duration: 5,
+              type: "spring",
+              stiffness: 20,
+              delay: 7,
+            }}
+            className={styles.coverFooter}
+          >
+            written by Thayu
+          </motion.div>
+        </div>
+      </div>
+
+      {/* <Section bgColor="yellow">
         <div className={styles.home}>
           <motion.img
             initial={{
@@ -33,7 +171,7 @@ export default function Index() {
             className={styles.homeImg}
           />
         </div>
-      </Section>
+      </Section> */}
       <Section bgColor="#c9f414">
         <motion.div
           initial={{ y: 100 }}
@@ -380,7 +518,7 @@ export default function Index() {
           className={styles.politician}
           initial={{ y: -800 }}
           whileInView={{ y: -50 }}
-          transition={{ duration: 2.5, ease:"backInOut" }}
+          transition={{ duration: 2.5, ease: "backInOut" }}
           viewport={{ once: false }}
         />
         <motion.div
