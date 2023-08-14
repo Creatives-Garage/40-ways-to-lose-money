@@ -2,6 +2,7 @@
 
 .pageWrapper {
     overflow-x: hidden;
+    position: relative;
 
     &:-webkit-scrollbar {
         display: none;
@@ -10,6 +11,17 @@
     &:-webkit-slider-thumb {
         width: 4px;
     }
+}
+
+.progressTracker {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: red;
+    transform-origin: 0%;
+    z-index: 4;
 }
 
 .home{
@@ -1147,13 +1159,14 @@
 
 .endCredits{
     width: 100vw;
-    height: 100vh;
+    height: 70vh;
     overflow: hidden;
     position: relative;
     background-color: yellow;
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: flex-start;
+    padding-top: 148px;    
 }
 
 .creditsHeader{
@@ -1166,19 +1179,23 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 156px;
     background-color: yellow;
     // display: none;
 
     h1{
-        font-family: Coco Goose;
-        color: blue;
+        font-family: Bebas Neue;
+        font-size: 80px;
+        color: #0A41BF;
+        letter-spacing: 4px;
     }
 }
 
 .creditInnerWrapper{
     width: 80%;
-    height: 40%;
-    background-color: bisque;
+    height: 60%;
+    // background-color: bisque;
+    overflow: hidden;
     
     &:nth-child(1){
         animation-delay: 1s;
@@ -1202,7 +1219,7 @@
     margin-bottom: 10px;
     opacity: 1;
     /* Adjust opacity for fading effect */
-    animation: creditsAnimation 5s linear infinite;
+    animation: creditsAnimation 10s linear infinite;
     /* Optional: Add fade-in effect */
     align-items: center;
     width: 100%;
@@ -1214,11 +1231,11 @@
 
 @keyframes creditsAnimation {
     0% {
-        transform: translateY(1100%);
+        transform: translateY(3000%);
     }
 
     100% {
-        transform: translateY(-100%);
+        transform: translateY(0%);
     }
 }
 

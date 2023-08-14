@@ -16,12 +16,14 @@ class MyDocument extends Document {
             content="https://bricksandacres.vercel.app/"
             key="og-url"
           />
-          <meta
-            property="og:title"
-            content="Bricks and Acres"
-            key="og-title"
-          />
+          <meta property="og:title" content="Bricks and Acres" key="og-title" />
           <link rel="icon" href="/logo.png" />
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+            rel="stylesheet"
+          />
         </Head>
         <body>
           <Main />

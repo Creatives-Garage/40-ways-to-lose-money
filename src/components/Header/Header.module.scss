@@ -1,36 +1,32 @@
 @import "../../styles/variables/index.scss";
 
-.h1, .h2, .h3{
+.headerWrapper{
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+  // border: 2px solid red;
+  padding: 4px;
+  // color: #0A41BF;
+  // vertical-align: baseline;
+}
+
+.h1Container{
   color: $body-text;
-  font-family: Coco Goose;
-  font-weight: 600;
+  // color: #0A41BF;
+  font-family: Bebas Neue;
+  font-size: 200px;
+  // border: solid white 1px;
+  line-height:84%;
+  // vertical-align: bottom;
 }
 
-.h1{
-  font-size: 48px;
-
-  @media (max-width: 1441px) {
-    font-size: 32px;    
-  }
-
-  @media (max-width: 426px) {
-    font-size: 32px;        
-  }
-}
-
-.h2{
-  font-size: 32px;
-    @media (max-width: 1441px) {
-        font-size: 24px;
-      }
-  @media (max-width: 426px) {
-    font-size: 28px;        
-  }
-}
-
-.h3{
-  font-size: 28px;
-  @media (max-width: 426px) {
-    font-size: 24px;        
-  }
+.data{
+  font-family: Bebas Neue;
+  font-size: 64px;
+  display: flex;
+  align-items: flex-end;
+  text-indent: 1%;
+  line-break: normal;
+  // width: 20%;
+  // border: 2px solid green;
 }

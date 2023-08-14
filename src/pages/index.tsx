@@ -5,12 +5,16 @@ import Header from "components/Header";
 import Section from "components/Section";
 import BodyText from "components/Body";
 import { data } from "dataSource";
-import { motion, useMotionValue, useTransform } from "framer-motion";
+import { motion, useScroll, useMotionValue, useTransform } from "framer-motion";
 
 export default function Index() {
-  console.log("Data: ", data[13])
+  const {scrollYProgress} = useScroll();
+  console.log("Data: ", scrollYProgress);
   return (
     <div className={styles.pageWrapper}>
+      <motion.div style={{scaleX: scrollYProgress}} className={styles.progressTracker}/>
+      {/* <div classname></div> */}
+
       <Section bgColor="yellow">
         <div className={styles.home}>
           <motion.img
@@ -47,7 +51,7 @@ export default function Index() {
           viewport={{ once: false }}
           className={styles.bodyRight}
         >
-          <Header level={1}>1. {data[0].header.toUpperCase()}</Header>
+          <Header level={"01"} data={data[0].header.toUpperCase()} />
           <BodyText>{data[0].body}</BodyText>
         </motion.div>
       </Section>
@@ -59,7 +63,7 @@ export default function Index() {
           viewport={{ once: false }}
           className={styles.bodyLeft}
         >
-          <Header level={1}>2. {data[1].header.toUpperCase()}</Header>
+          <Header level={2} data={data[1].header.toUpperCase()} />
           <BodyText>{data[1].body}</BodyText>
         </motion.div>
         <motion.div
@@ -79,7 +83,7 @@ export default function Index() {
           viewport={{ once: false }}
           className={styles.bodyRight}
         >
-          <Header level={1}>3. {data[2].header.toUpperCase()}</Header>
+          <Header level={3} data={data[2].header.toUpperCase()} />
           <BodyText>{data[2].body}</BodyText>
         </motion.div>
         <motion.div
@@ -94,7 +98,7 @@ export default function Index() {
       </Section>
       <Section bgColor="#03F1FA">
         <div className={styles.bodyLeft}>
-          <Header level={1}>4. {data[3].header.toUpperCase()}</Header>
+          <Header level={4} data={data[3].header.toUpperCase()} />
           <BodyText>{data[3].body}</BodyText>
         </div>
         <motion.img
@@ -124,7 +128,7 @@ export default function Index() {
           <Image src="/shuka.png" width={600} height={760} alt="Shuka" />
         </motion.div>
         <div className={styles.bodyRight}>
-          <Header level={1}>5. {data[4].header.toUpperCase()}</Header>
+          <Header level={5} data={data[4].header.toUpperCase()} />
           <BodyText>{data[4].body}</BodyText>
         </div>
       </Section>
@@ -145,11 +149,11 @@ export default function Index() {
           viewport={{ once: false }}
           className={styles.bodyLeft}
         >
-          <Header level={1}>6. {data[5].header.toUpperCase()}</Header>
+          <Header level={6} data={data[5].header.toUpperCase()} />
           <BodyText>{data[5].body}</BodyText>
         </motion.div>
       </Section>
-      <Section bgColor="#991e21">
+      <Section bgColor="#E16568">
         <motion.div
           initial={{ opacity: 0, scale: "50%" }}
           whileInView={{ opacity: 1, scale: "100%" }}
@@ -160,7 +164,7 @@ export default function Index() {
           <Image src="/HAND.png" width={680} height={560} alt="iPhone" />
         </motion.div>
         <div className={styles.bodyRight}>
-          <Header level={1}>7. {data[6].header.toUpperCase()}</Header>
+          <Header level={7} data={data[6].header.toUpperCase()} />
           <BodyText>{data[6].body}</BodyText>
         </div>
       </Section>
@@ -175,11 +179,11 @@ export default function Index() {
           className={styles.shitstorm}
         />
         <div className={styles.bodyLeft}>
-          <Header level={1}>8. {data[7].header.toUpperCase()}</Header>
+          <Header level={8} data={data[7].header.toUpperCase()} />
           <BodyText>{data[7].body}</BodyText>
         </div>
       </Section>
-      <Section bgColor="#d1383b">
+      <Section bgColor="#D67F98">
         <motion.div
           initial={{ opacity: 0, scale: "0%" }}
           whileInView={{ opacity: 1, scale: "70%", rotate: "360deg" }}
@@ -190,7 +194,7 @@ export default function Index() {
           <Image src="/LOGBOOK.png" width={680} height={580} alt="Logbook" />
         </motion.div>
         <div className={styles.bodyRight}>
-          <Header level={1}>9. {data[8].header.toUpperCase()}</Header>
+          <Header level={9} data={data[8].header.toUpperCase()} />
           <BodyText>{data[8].body}</BodyText>
         </div>
       </Section>
@@ -202,7 +206,7 @@ export default function Index() {
           viewport={{ once: false }}
           className={styles.bodyLeft}
         >
-          <Header level={1}>10. {data[9].header.toUpperCase()}</Header>
+          <Header level={10} data={data[9].header.toUpperCase()} />
           <BodyText>{data[9].body}</BodyText>
         </motion.div>
         <motion.div
@@ -232,7 +236,7 @@ export default function Index() {
           viewport={{ once: false }}
           className={styles.bodyRight}
         >
-          <Header level={1}>11. {data[10].header.toUpperCase()}</Header>
+          <Header level={11} data={data[10].header.toUpperCase()} />
           <BodyText>{data[10].body}</BodyText>
         </motion.div>
       </Section>
@@ -253,7 +257,7 @@ export default function Index() {
           viewport={{ once: false }}
           className={styles.bodyLeft}
         >
-          <Header level={1}>12. {data[11].header.toUpperCase()}</Header>
+          <Header level={12} data={data[11].header.toUpperCase()} />
           <BodyText>{data[11].body}</BodyText>
         </motion.div>
       </Section>
@@ -265,7 +269,7 @@ export default function Index() {
           viewport={{ once: false }}
           className={styles.bodyRight}
         >
-          <Header level={1}>13.. {data[12].header.toUpperCase()}</Header>
+          <Header level={13} data={data[12].header.toUpperCase()} />
           <BodyText>{data[12].body}</BodyText>
         </motion.div>
         <motion.img
@@ -288,7 +292,7 @@ export default function Index() {
           viewport={{ once: false }}
           className={styles.bodyLeft}
         >
-          <Header level={1}>14. {data[17].header.toUpperCase()}</Header>
+          <Header level={14} data={data[17].header.toUpperCase()} />
           <BodyText>{data[17].body}</BodyText>
         </motion.div>
         <motion.div
@@ -309,7 +313,7 @@ export default function Index() {
           viewport={{ once: false }}
           className={styles.bodyRight}
         >
-          <Header level={1}>15. {data[13].header.toUpperCase()}</Header>
+          <Header level={15} data={data[13].header.toUpperCase()} />
           <BodyText>{data[13].body}</BodyText>
         </motion.div>
         <motion.div
@@ -335,7 +339,7 @@ export default function Index() {
           viewport={{ once: false }}
           className={styles.bodyLeft}
         >
-          <Header level={1}>16. {data[14].header.toUpperCase()}</Header>
+          <Header level={16} data={data[14].header.toUpperCase()} />
           <BodyText>{data[14].body}</BodyText>
         </motion.div>
         <motion.img
@@ -356,7 +360,7 @@ export default function Index() {
           viewport={{ once: false }}
           className={styles.bodyRight}
         >
-          <Header level={1}>17. {data[15].header.toUpperCase()}</Header>
+          <Header level={17} data={data[15].header.toUpperCase()} />
           <BodyText>{data[15].body}</BodyText>
         </motion.div>
         <motion.div
@@ -369,15 +373,14 @@ export default function Index() {
           <Image src={data[15].image} width={640} height={700} alt="phone" />
         </motion.div>
       </Section>
-
       <Section bgColor="#DAD199">
         <motion.img
           src={data[19].image}
           alt="phone"
           className={styles.politician}
-          initial={{ opacity: 0, scale: 0.1 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 2.5 }}
+          initial={{ y: -800 }}
+          whileInView={{ y: -50 }}
+          transition={{ duration: 2.5, ease:"backInOut" }}
           viewport={{ once: false }}
         />
         <motion.div
@@ -387,11 +390,10 @@ export default function Index() {
           viewport={{ once: false }}
           className={styles.bodyLeft}
         >
-          <Header level={1}>18. {data[19].header.toUpperCase()}</Header>
+          <Header level={18} data={data[19].header.toUpperCase()} />
           <BodyText>{data[19].body}</BodyText>
         </motion.div>
       </Section>
-
       <Section bgColor="#DF978B">
         <motion.img
           src={data[20].image}
@@ -409,11 +411,10 @@ export default function Index() {
           viewport={{ once: false }}
           className={styles.bodyRight}
         >
-          <Header level={1}>19. {data[20].header.toUpperCase()}</Header>
+          <Header level={19} data={data[20].header.toUpperCase()} />
           <BodyText>{data[20].body}</BodyText>
         </motion.div>
       </Section>
-
       <Section bgColor="#BCC67A">
         <motion.img
           src={data[21].image}
@@ -431,11 +432,10 @@ export default function Index() {
           viewport={{ once: false }}
           className={styles.bodyLeft}
         >
-          <Header level={1}>20. {data[21].header.toUpperCase()}</Header>
+          <Header level={20} data={data[21].header.toUpperCase()} />
           <BodyText>{data[21].body}</BodyText>
         </motion.div>
       </Section>
-
       <Section bgColor="#8DB2EA">
         <motion.img
           src={data[22].image}
@@ -453,11 +453,10 @@ export default function Index() {
           viewport={{ once: false }}
           className={styles.bodyRight}
         >
-          <Header level={1}>21. {data[22].header.toUpperCase()}</Header>
+          <Header level={21} data={data[22].header.toUpperCase()} />
           <BodyText>{data[22].body}</BodyText>
         </motion.div>
       </Section>
-
       <Section bgColor="#D6A560">
         <motion.img
           src={data[23].image}
@@ -475,11 +474,10 @@ export default function Index() {
           viewport={{ once: false }}
           className={styles.bodyLeft}
         >
-          <Header level={1}>22. {data[23].header.toUpperCase()}</Header>
+          <Header level={22} data={data[23].header.toUpperCase()} />
           <BodyText>{data[23].body}</BodyText>
         </motion.div>
       </Section>
-
       <Section bgColor="#D49B97">
         <motion.img
           src={data[24].image}
@@ -497,19 +495,18 @@ export default function Index() {
           viewport={{ once: false }}
           className={styles.bodyRight}
         >
-          <Header level={1}>23. {data[24].header.toUpperCase()}</Header>
+          <Header level={23} data={data[24].header.toUpperCase()} />
           <BodyText>{data[24].body}</BodyText>
         </motion.div>
       </Section>
-
       <Section bgColor="#78B570">
         <motion.img
           src={data[25].image}
           alt="phone"
           className={styles.greenHouse}
-          initial={{ rotate: "0deg", opacity: 0, scale: 0.1 }}
-          whileInView={{ rotate: "360deg", opacity: 1, scale: 1 }}
-          transition={{ duration: 2.5, type: "spring" }}
+          initial={{ y: 300 }}
+          whileInView={{ y: 0 }}
+          transition={{ duration: 4, type: "spring" }}
           viewport={{ once: false }}
         />
         <motion.div
@@ -519,11 +516,10 @@ export default function Index() {
           viewport={{ once: false }}
           className={styles.bodyLeft}
         >
-          <Header level={1}>24. {data[25].header.toUpperCase()}</Header>
+          <Header level={24} data={data[25].header.toUpperCase()} />
           <BodyText>{data[25].body}</BodyText>
         </motion.div>
       </Section>
-
       <Section bgColor="#4D8AB1">
         <motion.img
           src={data[26].image}
@@ -541,11 +537,10 @@ export default function Index() {
           viewport={{ once: false }}
           className={styles.bodyRight}
         >
-          <Header level={1}>25. {data[26].header.toUpperCase()}</Header>
+          <Header level={25} data={data[26].header.toUpperCase()} />
           <BodyText>{data[26].body}</BodyText>
         </motion.div>
       </Section>
-
       <Section bgColor="#DAD199">
         <motion.img
           src={data[27].image}
@@ -563,11 +558,10 @@ export default function Index() {
           viewport={{ once: false }}
           className={styles.bodyLeft}
         >
-          <Header level={1}>26. {data[27].header.toUpperCase()}</Header>
+          <Header level={26} data={data[27].header.toUpperCase()} />
           <BodyText>{data[27].body}</BodyText>
         </motion.div>
       </Section>
-
       <Section bgColor="#F4AA73">
         <motion.img
           src={data[28].image}
@@ -585,33 +579,31 @@ export default function Index() {
           viewport={{ once: false }}
           className={styles.bodyRight}
         >
-          <Header level={1}>27. {data[28].header.toUpperCase()}</Header>
+          <Header level={27} data={data[28].header.toUpperCase()} />
           <BodyText>{data[28].body}</BodyText>
         </motion.div>
       </Section>
-
       <Section bgColor="#D984B6">
         <motion.img
           src={data[29].image}
           alt="phone"
           className={styles.nitakurudishia}
-          initial={{ opacity: 0, scale: 0.1 }}
-          whileInView={{ opacity: 1, scale: 1 }}
+          initial={{}}
+          whileInView={{ rotate: [0, 0, 25, -25, 0] }}
           transition={{ duration: 2.5, type: "spring" }}
           viewport={{ once: false }}
         />
         <motion.div
-          initial={{ y: -1 }}
-          whileInView={{ y: 5 }}
+          initial={{ y: 100 }}
+          whileInView={{ y: 0 }}
           transition={{ duration: 1.5, stiffness: 10 }}
           viewport={{ once: false }}
           className={styles.bodyLeft}
         >
-          <Header level={1}>28. {data[29].header.toUpperCase()}</Header>
+          <Header level={28} data={data[29].header.toUpperCase()} />
           <BodyText>{data[29].body}</BodyText>
         </motion.div>
       </Section>
-
       <Section bgColor="#E9C7A8">
         <motion.img
           src={data[30].image}
@@ -629,11 +621,10 @@ export default function Index() {
           viewport={{ once: false }}
           className={styles.bodyRight}
         >
-          <Header level={1}>29. {data[30].header.toUpperCase()}</Header>
+          <Header level={29} data={data[30].header.toUpperCase()} />
           <BodyText>{data[30].body}</BodyText>
         </motion.div>
       </Section>
-
       <Section bgColor="#EFE5A1">
         <motion.img
           src={data[31].image}
@@ -651,11 +642,10 @@ export default function Index() {
           viewport={{ once: false }}
           className={styles.bodyLeft}
         >
-          <Header level={1}>30. {data[31].header.toUpperCase()}</Header>
+          <Header level={30} data={data[31].header.toUpperCase()} />
           <BodyText>{data[31].body}</BodyText>
         </motion.div>
       </Section>
-
       <Section bgColor="#6FACCD">
         <motion.img
           src={data[32].image}
@@ -673,11 +663,10 @@ export default function Index() {
           viewport={{ once: false }}
           className={styles.bodyRight}
         >
-          <Header level={1}>31. {data[32].header.toUpperCase()}</Header>
+          <Header level={31} data={data[32].header.toUpperCase()} />
           <BodyText>{data[32].body}</BodyText>
         </motion.div>
       </Section>
-
       <Section bgColor="#D79193">
         <motion.img
           src={data[33].image}
@@ -695,7 +684,7 @@ export default function Index() {
           viewport={{ once: false }}
           className={styles.bodyLeft}
         >
-          <Header level={1}>40. {data[33].header.toUpperCase()}</Header>
+          <Header level={32} data={data[33].header.toUpperCase()} />
           <BodyText>{data[33].body}</BodyText>
         </motion.div>
       </Section>
