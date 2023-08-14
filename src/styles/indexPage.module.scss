@@ -2,6 +2,22 @@
 
 .pageWrapper {
     overflow-x: hidden;
+
+    &:-webkit-scrollbar {
+        display: none;
+    }
+
+    &:-webkit-slider-thumb {
+        width: 4px;
+    }
+}
+
+.home{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .bodyRight {
@@ -1127,4 +1143,95 @@
     @media (max-width: 321px) {
         width: 250px;
     }
+}
+
+.endCredits{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.creditsHeader{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    background-color: blue;
+    z-index: 2;
+    height: 148px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: yellow;
+    // display: none;
+
+    h1{
+        font-family: Coco Goose;
+        color: blue;
+    }
+}
+
+.creditInnerWrapper{
+    width: 80%;
+    height: 40%;
+    background-color: bisque;
+    
+    &:nth-child(1){
+        animation-delay: 1s;
+    }
+    &:nth-child(2){
+        animation-delay: 2s;
+    }
+    &:nth-child(3){
+        animation-delay: 3s;
+    }
+    &:nth-child(4){
+        animation-delay: 4s;
+    }
+    &:nth-child(5){
+        animation-delay: 5s;
+    }
+}
+
+.credit {
+    display: flex;
+    margin-bottom: 10px;
+    opacity: 1;
+    /* Adjust opacity for fading effect */
+    animation: creditsAnimation 5s linear infinite;
+    /* Optional: Add fade-in effect */
+    align-items: center;
+    width: 100%;
+    // height: 100%;
+    justify-content: center;
+    font-family: Coco Goose;
+    margin-bottom: 24px;
+}
+
+@keyframes creditsAnimation {
+    0% {
+        transform: translateY(1100%);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+.creditName {
+    font-size: 18px;
+    font-weight: bold;
+
+    &::after{
+        content: " - ";
+        margin-right: 8px;
+    }
+}
+
+.creditRole {
+    font-size: 14px;
 }

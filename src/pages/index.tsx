@@ -11,6 +11,25 @@ export default function Index() {
   console.log("Data: ", data[13])
   return (
     <div className={styles.pageWrapper}>
+      <Section bgColor="yellow">
+        <div className={styles.home}>
+          <motion.img
+            initial={{
+              scale: 0.1,
+            }}
+            animate={{
+              scale: 1,
+            }}
+            transition={{
+              ease: "easeInOut",
+              duration: 2,
+            }}
+            src="/homepage.png"
+            alt="home"
+            className={styles.homeImg}
+          />
+        </div>
+      </Section>
       <Section bgColor="#c9f414">
         <motion.div
           initial={{ y: 100 }}
@@ -680,6 +699,31 @@ export default function Index() {
           <BodyText>{data[33].body}</BodyText>
         </motion.div>
       </Section>
+      <div className={styles.endCredits}>
+        <div className={styles.creditsHeader}>
+          <h1>CREW AND CREDITS</h1>
+        </div>
+        <div className={styles.creditInnerWrapper}>
+          <div className={styles.credit}>
+            <span className={styles.creditName}>Writing</span>
+            <span className={styles.creditRole}>Thayu</span>
+          </div>
+          <div className={styles.credit}>
+            <span className={styles.creditName}>Editing</span>
+            <span className={styles.creditRole}>Adam Kiboi</span>
+          </div>
+          <div className={styles.credit}>
+            <span className={styles.creditName}>Illustration</span>
+            <span className={styles.creditRole}>Thayu, Diana Kavaya</span>
+          </div>
+          <div className={styles.credit}>
+            <span className={styles.creditName}>Web</span>
+            <span className={styles.creditRole}>
+              Zidane Gimiga, Henry Mutua
+            </span>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
