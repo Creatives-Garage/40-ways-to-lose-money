@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import styles from "../styles/indexPage.module.scss";
 import Header from "components/Header";
@@ -7,15 +7,107 @@ import BodyText from "components/Body";
 import { data } from "dataSource";
 import { motion, useScroll, useMotionValue, useTransform } from "framer-motion";
 
+const ArrowDown = () => {
+  return (
+    <motion.div 
+    initial={{
+      opacity: 0,
+      y: -50
+    }}
+    animate={{
+      opacity: 1,
+      y: 0
+    }}
+    transition={{
+      delay: 8,
+      stiffness: 20,
+      duration: 1.5
+    }}
+    className={styles.arrowBtnContainer}>
+      <div className={styles.circlesContainer}>
+        <svg width="60" height="60">
+          <circle
+            stroke="currentColor"
+            strokeWidth="2"
+            fill="transparent"
+            r="28"
+            cx="30"
+            cy="30"
+          ></circle>
+          <circle
+            className={styles.animatedCircle}
+            stroke="currentColor"
+            strokeWidth="2"
+            fill="transparent"
+            r="28"
+            cx="30"
+            cy="30"
+            // style="stroke-dasharray: 175.929, 175.929; transform: rotate(-90deg); transform-origin: 30px 30px;"
+            // transform-origin="30px 30px"
+            // strokeDashoffset="175.92918860102841"
+          ></circle>
+        </svg>
+      </div>
+      <span>
+        <svg
+          className={styles.animatedArrow}
+          // class="transform rotate-0"
+          width="32"
+          height="32"
+          viewBox="0 0 32 32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M15.101 5.5V23.1094L9.40108 17.4095L8.14807 18.6619L15.9862 26.5L23.852 18.6342L22.5996 17.3817L16.8725 23.1094V5.5H15.101Z"
+            // fill="currentColor"
+          ></path>
+        </svg>
+      </span>
+    </motion.div>
+  );
+}
+
 export default function Index() {
-  const {scrollYProgress} = useScroll();
+  const { scrollYProgress } = useScroll();
   console.log("Data: ", scrollYProgress);
+  const [viewportHeight, setViewportHeight] = useState(0);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setViewportHeight(window.innerHeight);
+    }
+  }, []);
+
+  const handleScrollOffsetDown = () => {
+    if (viewportHeight === 0) {
+      setViewportHeight(window.innerHeight);
+    }
+    window.scrollBy(0, viewportHeight);
+  };
+  const handleScrollOffsetUp = () => {
+    if (viewportHeight === 0) {
+      setViewportHeight(window.innerHeight);
+    }
+    window.scrollBy(0, -viewportHeight);
+  };
+
   return (
     <div className={styles.pageWrapper}>
       <motion.div
         style={{ scaleX: scrollYProgress }}
         className={styles.progressTracker}
       />
+      <div className={styles.buttonsContainer}>
+        <button onClick={handleScrollOffsetDown} className={styles.buttonNext}>
+          <ArrowDown />
+        </button>
+        <button className={styles.buttonPrev} onClick={handleScrollOffsetUp}>
+          <ArrowDown />
+        </button>
+      </div>
 
       <div className={styles.coverPageWrapper}>
         <div className={styles.coverPage}>
@@ -246,13 +338,14 @@ export default function Index() {
           <Image src="/shuka.png" width={600} height={760} alt="Shuka" />
         </motion.div>
         <motion.div
-         initial={{
-          y: 0
-         }}
-         whileInView={{
-          y: -145
-         }}
-         className={styles.bodyRight}>
+          initial={{
+            y: 0,
+          }}
+          whileInView={{
+            y: -145,
+          }}
+          className={styles.bodyRight}
+        >
           <Header level={"05"} data={data[4].header.toUpperCase()} />
           <BodyText>{data[4].body}</BodyText>
         </motion.div>

@@ -24,6 +24,37 @@
     z-index: 4;
 }
 
+.buttonsContainer {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    background-color: transparent;
+    gap: 16px;
+    z-index: 1000;
+
+    .buttonNext, .buttonPrev{
+        // background-color: black;
+        border-radius: 50%;
+        padding: 0;
+        background: transparent;
+        outline: none;
+        border: none;
+    }
+
+    .buttonPrev{
+        transform: rotate(180deg);
+    }
+
+    @media (max-width: 452px) {
+        transform: scale(70%);        
+    }
+}
+
 .coverPageWrapper{
     height: 100vh;
     background-color: yellow;
@@ -1268,7 +1299,7 @@
 
 .endCredits{
     width: 100vw;
-    height: 70vh;
+    height: 100vh;
     overflow: hidden;
     position: relative;
     background-color: yellow;
@@ -1359,4 +1390,49 @@
 
 .creditRole {
     font-size: 14px;
+}
+
+.arrowBtnContainer{
+    position: relative;
+    display: inline-flex;
+    height: 72px;
+    width: 72px;
+    flex:none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:hover{
+        .animatedArrow {
+                fill: blue;
+            }
+    }
+}
+
+.animatedCircle{
+    color: blue;
+    transition: ease-in-out 0.5s all;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 0, 175.929;
+    transform: rotate(-90deg);
+    transform-origin: 30px 30px;
+}
+
+.animatedArrow{
+    z-index: 1100;
+    transition: all ease-in-out 0.5s;
+    fill: black;
+}
+
+.circlesContainer {
+    position: absolute;
+    color: white;
+
+    &:hover {
+        .animatedCircle {
+            stroke-dasharray: 175.929, 175.929;
+        }
+    }
 }
