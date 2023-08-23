@@ -198,10 +198,22 @@ export const data = [
     body: "This guy and your pastor probably went to the same spiritual scam seminary. They're in the same Whatsapp group, tena they're admins. He will ask sijui for a white goat and a black chicken with red spots on its tail feathers. These he will sacrifice to the spirits of your ancestors (which likely means his wife, who has already prepped the vegetables for goat curry). And of course, a little money for him interceding with the spirits. However, your problem doesn't go away, your ex isn't suddenly in love with you/ your boss hasn't had a heart attack/ your wife's best friend is still having your baby. You’ll keep going there until it finally dawns on you ‌they have screwed you out of more domestic animals than Noah had on his ark.",
   },
   {
+    name: "Mchele (and we don&#39;t mean rice)",
+    image: "/mmchele.png",
+    header: "Mchele (and we don&#39;t mean rice)",
+    body: "The interesting thing about taking home a one-night stand is that sometimes she could rob you of everything, including your night stand. Popularly referred to as mchele, pills such as rophynol and dropped into unsuspecting mens drinks once they’ve taken a young lady of the night home. There you are, half in this world and the next and giving this stranger everything from your MPESA Pin to the DSTV child lock password. Pretty soon eve. Her mates have come over and the neighbours think you haven&#39;t paid the rent so decided to move out in the middle of the night. When you wake up everything is gone even your knock-off perfume and Rolx watches.",
+  },
+  {
     name: "Buying this book",
     image: "/scamBook.png",
     header: "Buying this book",
     body: "We wanted to get to forty ways to lose money but we got lazy so we decided to add the number forty. And fool you. See how easy that was. Honestly the editor thought this was a silly book and no one would buy but I guess the writer mastered the ways and got you to buy this book (insert evil laughter here)",
+  },
+  {
+    name: "Tender",
+    image: "/tender.png",
+    header: "Tender",
+    body: "Your friend works with the county government and can help you grab the tender to build pit latrines for some village. “Apply maze, I got you” Of course, you apply, and you get the tender because…your friend! However, after you’ve built the first latrine, your operation is at threat of grinding to a halt. - Your ‘friend’ needs a finder’s fee from you - The local MCA says that unless you grease his pockets, he’ll have the tender rescinded through the county assembly. - The local MP says that a little grease for him, they will declare your pit latrines unsafe. - The OCS says that without a little something something, items will start disappearing from your construction site. Soon you realise that after all the grease you&#39;re pouring into pockets, you’ll end up struggling to break even, leave alone make a profit.",
   },
 ];
 

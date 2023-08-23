@@ -885,9 +885,51 @@ export default function Index() {
           <BodyText>{data[32].body}</BodyText>
         </motion.div>
       </Section>
-      <Section bgColor="#F15BB5">
+      <Section bgColor="#03BBF9">
         <motion.img
           src={data[33].image}
+          alt="phone"
+          className={styles.roadsideChurches}
+          initial={{ opacity: 0, scale: 0.1 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 2.5, type: "spring" }}
+          viewport={{ once: false }}
+        />
+        <motion.div
+          initial={{ y: -1 }}
+          whileInView={{ y: 5 }}
+          transition={{ duration: 1.5, stiffness: 10 }}
+          viewport={{ once: false }}
+          className={styles.bodyLeft}
+        >
+          <Header level={32} data={data[33].header.toUpperCase()} />
+          <BodyText>{data[33].body}</BodyText>
+        </motion.div>
+      </Section>
+      <Section bgColor="#9B5DE5">
+        <motion.img
+          src={data[35].image}
+          alt="phone"
+          className={styles.mganga}
+          initial={{ opacity: 0, scale: 0.1 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 2.5, type: "spring" }}
+          viewport={{ once: false }}
+        />
+        <motion.div
+          initial={{ y: -1 }}
+          whileInView={{ y: 5 }}
+          transition={{ duration: 1.5, stiffness: 10 }}
+          viewport={{ once: false }}
+          className={styles.bodyRight}
+        >
+          <Header level={33} data={data[35].header.toUpperCase()} />
+          <BodyText>{data[35].body}</BodyText>
+        </motion.div>
+      </Section>
+      <Section bgColor="#F15BB5">
+        <motion.img
+          src={data[34].image}
           alt="phone"
           className={styles.scamBook}
           initial={{ opacity: 0, scale: 0.1 }}
@@ -902,7 +944,7 @@ export default function Index() {
           viewport={{ once: false }}
           className={styles.bodyLeft}
         >
-          <Header level={32} data={data[33].header.toUpperCase()} />
+          <Header level={34} data={data[34].header.toUpperCase()} />
           <BodyText>{data[33].body}</BodyText>
         </motion.div>
       </Section>
