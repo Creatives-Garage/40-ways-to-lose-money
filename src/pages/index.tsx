@@ -244,7 +244,7 @@ export default function Index() {
           </motion.div>
         </div>
       </div>
-      <Section bgColor="#c9f414">
+      <Section bgColor="#9B5DE5">
         <motion.div
           initial={{ y: 100 }}
           whileInView={{ y: 0 }}
@@ -265,7 +265,7 @@ export default function Index() {
           <BodyText>{data[0].body}</BodyText>
         </motion.div>
       </Section>
-      <Section bgColor="#FEA794">
+      <Section bgColor="#F15BB5">
         <motion.div
           initial={{ y: 100 }}
           whileInView={{ y: 17 }}
@@ -285,7 +285,7 @@ export default function Index() {
           <Image src="/Pastor.png" width={560} height={650} alt="Pastor" />
         </motion.div>
       </Section>
-      <Section bgColor="#309ead">
+      <Section bgColor="#FEE440">
         <motion.div
           initial={{ x: -150 }}
           whileInView={{ x: 0 }}
@@ -306,7 +306,7 @@ export default function Index() {
           <Image src="/Luthuli.png" width={600} height={840} alt="Pastor" />
         </motion.div>
       </Section>
-      <Section bgColor="#03F1FA">
+      <Section bgColor="#03BBF9">
         <div className={styles.bodyLeft}>
           <Header level={"04"} data={data[3].header.toUpperCase()} />
           <BodyText>{data[3].body}</BodyText>
@@ -327,7 +327,7 @@ export default function Index() {
           className={styles.washwash}
         />
       </Section>
-      <Section bgColor="#F97F89">
+      <Section bgColor="#02F5D4">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -350,7 +350,7 @@ export default function Index() {
           <BodyText>{data[4].body}</BodyText>
         </motion.div>
       </Section>
-      <Section bgColor="#329dad">
+      <Section bgColor="#9B5DE5">
         <motion.div
           className={styles.ben10}
           initial={{ x: 200 }}
@@ -371,7 +371,7 @@ export default function Index() {
           <BodyText>{data[5].body}</BodyText>
         </motion.div>
       </Section>
-      <Section bgColor="#E16568">
+      <Section bgColor="#F15BB5">
         <motion.div
           initial={{ opacity: 0, scale: "50%" }}
           whileInView={{ opacity: 1, scale: "100%" }}
@@ -386,7 +386,7 @@ export default function Index() {
           <BodyText>{data[6].body}</BodyText>
         </div>
       </Section>
-      <Section bgColor="#dfd946">
+      <Section bgColor="#FEE440">
         <motion.img
           initial={{ opacity: 0, scale: "50%" }}
           whileInView={{ opacity: 1, scale: "100%" }}
@@ -401,7 +401,7 @@ export default function Index() {
           <BodyText>{data[7].body}</BodyText>
         </div>
       </Section>
-      <Section bgColor="#D67F98">
+      <Section bgColor="#03BBF9">
         <motion.div
           initial={{ opacity: 0, scale: "0%" }}
           whileInView={{ opacity: 1, scale: "70%", rotate: "360deg" }}
@@ -416,7 +416,7 @@ export default function Index() {
           <BodyText>{data[8].body}</BodyText>
         </div>
       </Section>
-      <Section bgColor="#8ab035">
+      <Section bgColor="#02F5D4">
         <motion.div
           initial={{ x: 100, opacity: 0, y: 100 }}
           whileInView={{ x: 0, opacity: 1, y: 20 }}
@@ -437,7 +437,7 @@ export default function Index() {
           <Image src="/house.png" width={680} height={800} alt="Pastor" />
         </motion.div>
       </Section>
-      <Section bgColor="#3560b0">
+      <Section bgColor="#9B5DE5">
         <motion.img
           initial={{ y: 200 }}
           whileInView={{ y: 10 }}
@@ -458,7 +458,7 @@ export default function Index() {
           <BodyText>{data[10].body}</BodyText>
         </motion.div>
       </Section>
-      <Section bgColor="#e9868b">
+      <Section bgColor="#F15BB5">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -479,7 +479,7 @@ export default function Index() {
           <BodyText>{data[11].body}</BodyText>
         </motion.div>
       </Section>
-      <Section bgColor="#bfe3aa">
+      <Section bgColor="#FEE440">
         <motion.div
           initial={{ y: 100 }}
           whileInView={{ y: 0 }}
@@ -502,7 +502,7 @@ export default function Index() {
           className={styles.newspaper}
         />
       </Section>
-      <Section bgColor="#f7ce91">
+      <Section bgColor="#03BBF9">
         <motion.div
           initial={{ y: 0 }}
           whileInView={{ y: 100 }}
@@ -523,7 +523,7 @@ export default function Index() {
           <Image src={data[17].image} width={595} height={700} alt="Betting" />
         </motion.div>
       </Section>
-      <Section bgColor="#99e5e3">
+      <Section bgColor="#02F5D4">
         <motion.div
           initial={{ y: 100 }}
           whileInView={{ y: 0 }}
@@ -549,7 +549,7 @@ export default function Index() {
           />
         </motion.div>
       </Section>
-      <Section bgColor="#ebeeb2">
+      <Section bgColor="#9B5DE5">
         <motion.div
           initial={{ y: 0 }}
           whileInView={{ y: 100 }}
@@ -570,7 +570,7 @@ export default function Index() {
           className={styles.vote}
         />
       </Section>
-      <Section bgColor="#99e5e3">
+      <Section bgColor="#F15BB5">
         <motion.div
           initial={{ y: -1 }}
           whileInView={{ y: 5 }}
@@ -591,7 +591,7 @@ export default function Index() {
           <Image src={data[15].image} width={640} height={700} alt="phone" />
         </motion.div>
       </Section>
-      <Section bgColor="#DAD199">
+      <Section bgColor="#FEE440">
         <motion.img
           src={data[19].image}
           alt="phone"
@@ -612,7 +612,7 @@ export default function Index() {
           <BodyText>{data[19].body}</BodyText>
         </motion.div>
       </Section>
-      <Section bgColor="#DF978B">
+      <Section bgColor="#03BBF9">
         <motion.img
           src={data[20].image}
           alt="phone"
@@ -633,7 +633,7 @@ export default function Index() {
           <BodyText>{data[20].body}</BodyText>
         </motion.div>
       </Section>
-      <Section bgColor="#BCC67A">
+      <Section bgColor="#02F5D4">
         <motion.img
           src={data[21].image}
           alt="phone"
@@ -654,7 +654,7 @@ export default function Index() {
           <BodyText>{data[21].body}</BodyText>
         </motion.div>
       </Section>
-      <Section bgColor="#8DB2EA">
+      <Section bgColor="#9B5DE5">
         <motion.img
           src={data[22].image}
           alt="phone"
@@ -675,7 +675,7 @@ export default function Index() {
           <BodyText>{data[22].body}</BodyText>
         </motion.div>
       </Section>
-      <Section bgColor="#D6A560">
+      <Section bgColor="#F15BB5">
         <motion.img
           src={data[23].image}
           alt="phone"
@@ -696,7 +696,7 @@ export default function Index() {
           <BodyText>{data[23].body}</BodyText>
         </motion.div>
       </Section>
-      <Section bgColor="#D49B97">
+      <Section bgColor="#FEE440">
         <motion.img
           src={data[24].image}
           alt="phone"
@@ -717,7 +717,7 @@ export default function Index() {
           <BodyText>{data[24].body}</BodyText>
         </motion.div>
       </Section>
-      <Section bgColor="#78B570">
+      <Section bgColor="#03BBF9">
         <motion.img
           src={data[25].image}
           alt="phone"
@@ -738,7 +738,7 @@ export default function Index() {
           <BodyText>{data[25].body}</BodyText>
         </motion.div>
       </Section>
-      <Section bgColor="#4D8AB1">
+      <Section bgColor="#02F5D4">
         <motion.img
           src={data[26].image}
           alt="phone"
@@ -759,7 +759,7 @@ export default function Index() {
           <BodyText>{data[26].body}</BodyText>
         </motion.div>
       </Section>
-      <Section bgColor="#DAD199">
+      <Section bgColor="#9B5DE5">
         <motion.img
           src={data[27].image}
           alt="phone"
@@ -780,7 +780,7 @@ export default function Index() {
           <BodyText>{data[27].body}</BodyText>
         </motion.div>
       </Section>
-      <Section bgColor="#F4AA73">
+      <Section bgColor="#F15BB5">
         <motion.img
           src={data[28].image}
           alt="phone"
@@ -801,7 +801,7 @@ export default function Index() {
           <BodyText>{data[28].body}</BodyText>
         </motion.div>
       </Section>
-      <Section bgColor="#D984B6">
+      <Section bgColor="#FEE440">
         <motion.img
           src={data[29].image}
           alt="phone"
@@ -822,7 +822,7 @@ export default function Index() {
           <BodyText>{data[29].body}</BodyText>
         </motion.div>
       </Section>
-      <Section bgColor="#E9C7A8">
+      <Section bgColor="#03BBF9">
         <motion.img
           src={data[30].image}
           alt="phone"
@@ -843,7 +843,7 @@ export default function Index() {
           <BodyText>{data[30].body}</BodyText>
         </motion.div>
       </Section>
-      <Section bgColor="#EFE5A1">
+      <Section bgColor="#02F5D4">
         <motion.img
           src={data[31].image}
           alt="phone"
@@ -864,7 +864,7 @@ export default function Index() {
           <BodyText>{data[31].body}</BodyText>
         </motion.div>
       </Section>
-      <Section bgColor="#6FACCD">
+      <Section bgColor="#9B5DE5">
         <motion.img
           src={data[32].image}
           alt="phone"
@@ -885,7 +885,7 @@ export default function Index() {
           <BodyText>{data[32].body}</BodyText>
         </motion.div>
       </Section>
-      <Section bgColor="#D79193">
+      <Section bgColor="#F15BB5">
         <motion.img
           src={data[33].image}
           alt="phone"
