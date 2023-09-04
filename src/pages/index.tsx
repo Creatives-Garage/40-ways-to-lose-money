@@ -9,21 +9,22 @@ import { motion, useScroll, useMotionValue, useTransform } from "framer-motion";
 
 const ArrowDown = () => {
   return (
-    <motion.div 
-    initial={{
-      opacity: 0,
-      y: -50
-    }}
-    animate={{
-      opacity: 1,
-      y: 0
-    }}
-    transition={{
-      delay: 8,
-      stiffness: 20,
-      duration: 1.5
-    }}
-    className={styles.arrowBtnContainer}>
+    <motion.div
+      initial={{
+        opacity: 0,
+        y: -50,
+      }}
+      animate={{
+        opacity: 1,
+        y: 0,
+      }}
+      transition={{
+        delay: 8,
+        stiffness: 20,
+        duration: 1.5,
+      }}
+      className={styles.arrowBtnContainer}
+    >
       <div className={styles.circlesContainer}>
         <svg width="60" height="60">
           <circle
@@ -68,7 +69,7 @@ const ArrowDown = () => {
       </span>
     </motion.div>
   );
-}
+};
 
 export default function Index() {
   const { scrollYProgress } = useScroll();
@@ -244,7 +245,7 @@ export default function Index() {
           </motion.div>
         </div>
       </div>
-      <Section bgColor="#9B5DE5">
+      {/* <Section bgColor="#9B5DE5">
         <motion.div
           initial={{ y: 100 }}
           whileInView={{ y: 0 }}
@@ -342,7 +343,7 @@ export default function Index() {
             y: 0,
           }}
           whileInView={{
-            y: -145,
+            y: -100,
           }}
           className={styles.bodyRight}
         >
@@ -436,13 +437,13 @@ export default function Index() {
         >
           <Image src="/house.png" width={680} height={800} alt="Pastor" />
         </motion.div>
-      </Section>
+      </Section> */}
       <Section bgColor="#9B5DE5">
-        <motion.img
-          initial={{ y: 200 }}
-          whileInView={{ y: 10 }}
-          transition={{ duration: 1.5 }}
-          viewport={{ once: false }}
+        <img
+          // initial={{ y: 200 }}
+          // whileInView={{ y: 10 }}
+          // transition={{ duration: 1.5 }}
+          // viewport={{ once: false }}
           src="/multilevel.png"
           alt="Multilevel"
           className={styles.multilevel}
@@ -594,7 +595,7 @@ export default function Index() {
       <Section bgColor="#FEE440">
         <motion.img
           src={data[19].image}
-          alt="phone"
+          alt="politician"
           className={styles.politician}
           initial={{ y: -800 }}
           whileInView={{ y: -50 }}
@@ -889,7 +890,7 @@ export default function Index() {
         <motion.img
           src={data[33].image}
           alt="phone"
-          className={styles.roadsideChurches}
+          className={styles.mchele}
           initial={{ opacity: 0, scale: 0.1 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 2.5, type: "spring" }}
@@ -910,7 +911,7 @@ export default function Index() {
         <motion.img
           src={data[35].image}
           alt="phone"
-          className={styles.mganga}
+          className={styles.tender}
           initial={{ opacity: 0, scale: 0.1 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 2.5, type: "spring" }}

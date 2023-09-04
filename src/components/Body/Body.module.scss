@@ -12,4 +12,10 @@
     @media (max-width: 1441px) {
         font-size: 14px;
     }
+
+    @media (max-width: 461px) {
+        font-size: 10px;
+        line-height: 126%;
+        // margin-top: -24px;
+    }
 }

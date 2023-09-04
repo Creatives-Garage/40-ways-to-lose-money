@@ -8,6 +8,9 @@
   padding: 4px;
   // color: #0A41BF;
   // vertical-align: baseline;
+
+  @media (max-width: 461px) {
+    }
 }
 
 .h1Container{
@@ -19,9 +22,9 @@
   line-height: 84%;
   // vertical-align: bottom;
 
-      @media (max-width: 429px) {
-          font-size: 40px;
-        }
+      @media (max-width: 461px) {
+          font-size: 80px;
+      }
 }
 
 .data{
@@ -32,8 +35,9 @@
   text-indent: 1%;
   line-break: normal;
   color: $body-text;
-        @media (max-width: 429px) {
-            font-size: 24px;
+        @media (max-width: 461px) {
+            font-size: 32px;
+            // margin-top: -24px;
           }
   // width: 20%;
   // border: 2px solid green;
