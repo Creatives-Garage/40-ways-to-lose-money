@@ -198,7 +198,7 @@ export const data = [
     body: "This guy and your pastor probably went to the same spiritual scam seminary. They're in the same Whatsapp group, tena they're admins. He will ask sijui for a white goat and a black chicken with red spots on its tail feathers. These he will sacrifice to the spirits of your ancestors (which likely means his wife, who has already prepped the vegetables for goat curry). And of course, a little money for him interceding with the spirits. However, your problem doesn't go away, your ex isn't suddenly in love with you/ your boss hasn't had a heart attack/ your wife's best friend is still having your baby. You’ll keep going there until it finally dawns on you ‌they have screwed you out of more domestic animals than Noah had on his ark.",
   },
   {
-    name: "Mchele (and we don&#39;t mean rice)",
+    name: "Mchele (and we don't mean rice)",
     image: "/mmchele.png",
     header: "Mchele (and we don&#39;t mean rice)",
     body: "The interesting thing about taking home a one-night stand is that sometimes she could rob you of everything, including your night stand. Popularly referred to as mchele, pills such as rophynol and dropped into unsuspecting mens drinks once they’ve taken a young lady of the night home. There you are, half in this world and the next and giving this stranger everything from your MPESA Pin to the DSTV child lock password. Pretty soon eve. Her mates have come over and the neighbours think you haven&#39;t paid the rent so decided to move out in the middle of the night. When you wake up everything is gone even your knock-off perfume and Rolx watches.",
