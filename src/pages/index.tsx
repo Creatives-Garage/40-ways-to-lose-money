@@ -245,7 +245,7 @@ export default function Index() {
           </motion.div>
         </div>
       </div>
-      {/* <Section bgColor="#9B5DE5">
+      <Section bgColor="#9B5DE5">
         <motion.div
           initial={{ y: 100 }}
           whileInView={{ y: 0 }}
@@ -437,7 +437,7 @@ export default function Index() {
         >
           <Image src="/house.png" width={680} height={800} alt="Pastor" />
         </motion.div>
-      </Section> */}
+      </Section>
       <Section bgColor="#9B5DE5">
         <img
           // initial={{ y: 200 }}
