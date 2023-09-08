@@ -126,10 +126,10 @@ export const data = [
     body: "When you were 23 years old the entire village hired a matatu to take you to the airport for schooling in Amerikka. You were the first in the clan to go to university, leave alone to go study abroad! 15 years later, with a master's degree you work your ass off for 14 hours a day, and finally have enough money to invest in a house back home. Since your mother spends at least half of your weekly catch up phone call complaining about your unemployed brother, you decide he’ll be in charge of the construction. Well, there’s a reason your brother can't hold down a job. He’s a shifty character. For a year he sends you photos of the neighbours construction site claiming it’s your home. When you finally decide to visit Kenya for Christmas and check out your new home you nearly have. The construction site comprises a pile of sand, one jembe, a wheelbarrow and one half of a pair of gumboots. Your brother, just like the house,is nowhere to be seen.",
   },
   {
-    name: "Nitakurudishia next week",
+    name: "Please Refund/Tafadhali Nirudishie",
     image: "/refund.png",
-    header: "Nitakurudishia next week",
-    body: "Aki this friend is always in a fix. Sijui child is sick, sijui his mum wants to come to Nairobi from the village, so in true fashion he comes begging for money from you saying he would pay next week. Kumbe that was a story, the guy keeps telling you how much his life sucks and that he would pay you next week, for weeks until you give up.",
+    header: "Please Refund/Tafadhali Nirudishie",
+    body: "`Hi sorry, I sent you KSh 2000 that was meant for my ailing mother in the village. Kindly send it back and may God bless you.` If you fall for this maybe you deserve to be scammed",
   },
   {
     name: "Housing agent",
@@ -216,4 +216,3 @@ export const data = [
     body: "Your friend works with the county government and can help you grab the tender to build pit latrines for some village. “Apply maze, I got you” Of course, you apply, and you get the tender because…your friend! However, after you’ve built the first latrine, your operation is at threat of grinding to a halt. - Your ‘friend’ needs a finder’s fee from you - The local MCA says that unless you grease his pockets, he’ll have the tender rescinded through the county assembly. - The local MP says that a little grease for him, they will declare your pit latrines unsafe. - The OCS says that without a little something something, items will start disappearing from your construction site. Soon you realise that after all the grease you&#39;re pouring into pockets, you’ll end up struggling to break even, leave alone make a profit.",
   },
 ];
-
