@@ -260,7 +260,7 @@ export default function Index() {
           </motion.div>
         </div>
       </div>
-      {/* <Section bgColor="#9B5DE5">
+      <Section bgColor="#9B5DE5">
         <motion.div
           initial={{ y: 100 }}
           whileInView={{ y: 0 }}
