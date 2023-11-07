@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Image from "next/image";
 import styles from "../styles/indexPage.module.scss";
 import Header from "components/Header";
@@ -76,6 +76,21 @@ export default function Index() {
   console.log("Data: ", scrollYProgress);
   const [viewportHeight, setViewportHeight] = useState(0);
 
+  const audioRef = useRef(new Audio());
+
+  const playAudio = (src) => {
+    if (audioRef.current) {
+      audioRef.current.pause();
+      audioRef.current = new Audio(src);
+      audioRef.current.play();
+    }
+  };
+
+  const stopAudio = () => {
+    if (audioRef.current) {
+      audioRef.current.pause();
+    }
+  };
   useEffect(() => {
     if (typeof window !== "undefined") {
       setViewportHeight(window.innerHeight);
@@ -438,7 +453,7 @@ export default function Index() {
           <Image src="/house.png" width={680} height={800} alt="Pastor" />
         </motion.div>
       </Section> */}
-      <Section bgColor="#9B5DE5">
+      <Section bgColor="#9B5DE5"  onEnterViewport={()=> playAudio("/sounds/AYEK 1.wav")}>
         <img
           // initial={{ y: 200 }}
           // whileInView={{ y: 10 }}
@@ -459,7 +474,7 @@ export default function Index() {
           <BodyText>{data[10].body}</BodyText>
         </motion.div>
       </Section>
-      <Section bgColor="#F15BB5">
+      <Section bgColor="#F15BB5" onEnterViewport={()=> playAudio("/sounds/AYEK 2.wav")}>
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -480,7 +495,7 @@ export default function Index() {
           <BodyText>{data[11].body}</BodyText>
         </motion.div>
       </Section>
-      <Section bgColor="#FEE440">
+      <Section bgColor="#FEE440" onEnterViewport={()=> playAudio("/sounds/AYEK 3.wav")}>
         <motion.div
           initial={{ y: 100 }}
           whileInView={{ y: 0 }}
@@ -503,7 +518,7 @@ export default function Index() {
           className={styles.newspaper}
         />
       </Section>
-      <Section bgColor="#03BBF9">
+      <Section bgColor="#03BBF9" onEnterViewport={()=> playAudio("/sounds/AYEK 4.wav")}>
         <motion.div
           initial={{ y: 0 }}
           whileInView={{ y: 100 }}
@@ -524,7 +539,7 @@ export default function Index() {
           <Image src={data[17].image} width={595} height={700} alt="Betting" />
         </motion.div>
       </Section>
-      <Section bgColor="#02F5D4">
+      <Section bgColor="#02F5D4" onEnterViewport={()=> playAudio("/sounds/AYEK 1.wav")}>
         <motion.div
           initial={{ y: 100 }}
           whileInView={{ y: 0 }}
@@ -550,7 +565,7 @@ export default function Index() {
           />
         </motion.div>
       </Section>
-      <Section bgColor="#9B5DE5">
+      <Section bgColor="#9B5DE5" onEnterViewport={()=> playAudio("/sounds/AYEK 2.wav")}>
         <motion.div
           initial={{ y: 0 }}
           whileInView={{ y: 100 }}
@@ -571,7 +586,7 @@ export default function Index() {
           className={styles.vote}
         />
       </Section>
-      <Section bgColor="#F15BB5">
+      <Section bgColor="#F15BB5" onEnterViewport={()=> playAudio("/sounds/AYEK 3.wav")}>
         <motion.div
           initial={{ y: -1 }}
           whileInView={{ y: 5 }}
@@ -592,7 +607,7 @@ export default function Index() {
           <Image src={data[15].image} width={640} height={700} alt="phone" />
         </motion.div>
       </Section>
-      <Section bgColor="#FEE440">
+      {/* <Section bgColor="#FEE440">
         <motion.img
           src={data[19].image}
           alt="politician"
@@ -948,7 +963,7 @@ export default function Index() {
           <Header level={34} data={data[34].header.toUpperCase()} />
           <BodyText>{data[33].body}</BodyText>
         </motion.div>
-      </Section>
+      </Section> */}
       <div className={styles.endCredits}>
         <div className={styles.creditsHeader}>
           <h1>CREW AND CREDITS</h1>
