@@ -19,4 +19,10 @@
         padding: 40px 24px;
         flex-direction: column-reverse;
     }
+    @media (max-width: 461px) {
+        padding-top: 240px;
+        padding-left: 16px;
+        padding-right: 16px;
+        flex-direction: column-reverse;
+    }
 }

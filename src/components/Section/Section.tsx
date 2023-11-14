@@ -25,13 +25,13 @@ const Section = ({ children, audio, bgColor }: SectionProps) => {
       { root: null, rootMargin: '100px', threshold: 1.0 }
     );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
+    if (audioRef.current) {
+      observer.observe(audioRef.current);
     }
 
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
+      if (audioRef.current) {
+        observer.unobserve(audioRef.current);
       }
     };
   }, [audio, audioRef]);
@@ -43,7 +43,7 @@ const Section = ({ children, audio, bgColor }: SectionProps) => {
       className={styles.section} 
       style={{backgroundColor: bgColor}}
     >
-      <audio ref={audioRef} preload="metadata" loop>
+      <audio ref={audioRef} preload="auto">
         <source type="audio/mpeg" src={"/sounds/test.mp3"} />
       </audio>
       {children}
