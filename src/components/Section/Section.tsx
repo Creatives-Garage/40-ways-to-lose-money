@@ -4,20 +4,25 @@ import styles from "./Section.module.scss";
 interface SectionProps{
   children: React.ReactNode;
   bgColor: string;
-  onEnterViewport: ()=> void;
+  audio?:string;
 }
 
-const Section = ({ children, bgColor, onEnterViewport }: SectionProps) => {
-  const sectionRef = useRef(null);
+const Section = ({ children, audio, bgColor }: SectionProps) => {
+  const sectionRef = useRef<HTMLDivElement>(null);
+  const audioRef = React.useRef<HTMLAudioElement | null>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          onEnterViewport();
+          console.log("Intersecting")
+          audioRef.current.src = `/sounds/${audio}`;
+          audioRef.current.play();
+        } else {
+          audioRef.current.pause()
         }
       },
-      { root: null, rootMargin: '0px', threshold: 1.0 }
+      { root: null, rootMargin: '100px', threshold: 1.0 }
     );
 
     if (sectionRef.current) {
@@ -29,7 +34,8 @@ const Section = ({ children, bgColor, onEnterViewport }: SectionProps) => {
         observer.unobserve(sectionRef.current);
       }
     };
-  }, [onEnterViewport]);
+  }, [audio, audioRef]);
+
 
   return(
     <div
@@ -37,6 +43,9 @@ const Section = ({ children, bgColor, onEnterViewport }: SectionProps) => {
       className={styles.section} 
       style={{backgroundColor: bgColor}}
     >
+      <audio ref={audioRef} preload="metadata" controls>
+        <source type="audio/mpeg" src={"/sounds/test.mp3"} />
+      </audio>
       {children}
     </div>
   );

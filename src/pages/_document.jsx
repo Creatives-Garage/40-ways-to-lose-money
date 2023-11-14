@@ -19,7 +19,7 @@ class MyDocument extends Document {
           <meta property="og:title" content="Bricks and Acres" key="og-title" />
           <link rel="icon" href="/logo.png" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
           <link
             href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
             rel="stylesheet"

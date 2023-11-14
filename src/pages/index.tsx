@@ -6,6 +6,7 @@ import Section from "components/Section";
 import BodyText from "components/Body";
 import { data } from "dataSource";
 import { motion, useScroll, useMotionValue, useTransform } from "framer-motion";
+import { playSectionSound } from "utils/playSectionSound";
 
 const ArrowDown = () => {
   return (
@@ -73,24 +74,8 @@ const ArrowDown = () => {
 
 export default function Index() {
   const { scrollYProgress } = useScroll();
-  console.log("Data: ", scrollYProgress);
   const [viewportHeight, setViewportHeight] = useState(0);
 
-  const audioRef = useRef(new Audio());
-
-  const playAudio = (src) => {
-    if (audioRef.current) {
-      audioRef.current.pause();
-      audioRef.current = new Audio(src);
-      audioRef.current.play();
-    }
-  };
-
-  const stopAudio = () => {
-    if (audioRef.current) {
-      audioRef.current.pause();
-    }
-  };
   useEffect(() => {
     if (typeof window !== "undefined") {
       setViewportHeight(window.innerHeight);
@@ -110,6 +95,19 @@ export default function Index() {
     window.scrollBy(0, -viewportHeight);
   };
 
+  const audioRef = useRef<HTMLAudioElement>(null);
+
+  const playAudio = async (src: string) => {
+    await playSectionSound(src);        
+  };
+
+  useEffect(() => {
+  }, [])  
+
+  const stopAudio = () => {
+    console.log("Audio stopped")
+  };
+
   return (
     <div className={styles.pageWrapper}>
       <motion.div
@@ -123,6 +121,7 @@ export default function Index() {
         <button className={styles.buttonPrev} onClick={handleScrollOffsetUp}>
           <ArrowDown />
         </button>
+        {/* <audio ref={audioRef} src="../../"/> */}
       </div>
 
       <div className={styles.coverPageWrapper}>
@@ -260,7 +259,7 @@ export default function Index() {
           </motion.div>
         </div>
       </div>
-      <Section bgColor="#9B5DE5">
+      <Section bgColor="#9B5DE5" audio="AYEK 1.wav" >
         <motion.div
           initial={{ y: 100 }}
           whileInView={{ y: 0 }}
@@ -279,9 +278,12 @@ export default function Index() {
         >
           <Header level={"01"} data={data[0].header.toUpperCase()} />
           <BodyText>{data[0].body}</BodyText>
+          <audio ref={audioRef} preload="metadata" style={{ backgroundColor: "green", width: "190px", height: "80px" }}>
+            <source src={"/sounds/test.mp3"} />
+          </audio>
         </motion.div>
       </Section>
-      <Section bgColor="#F15BB5">
+      <Section bgColor="#F15BB5"  audio="AYEK 2.wav">
         <motion.div
           initial={{ y: 100 }}
           whileInView={{ y: 17 }}
@@ -301,7 +303,7 @@ export default function Index() {
           <Image src="/Pastor.png" width={560} height={650} alt="Pastor" />
         </motion.div>
       </Section>
-      <Section bgColor="#FEE440">
+      <Section bgColor="#FEE440"  audio="AYEK 3.wav">
         <motion.div
           initial={{ x: -150 }}
           whileInView={{ x: 0 }}
@@ -322,7 +324,7 @@ export default function Index() {
           <Image src="/Luthuli.png" width={600} height={840} alt="Pastor" />
         </motion.div>
       </Section>
-      <Section bgColor="#03BBF9">
+      <Section bgColor="#03BBF9" audio="AYEK 1.wav">
         <div className={styles.bodyLeft}>
           <Header level={"04"} data={data[3].header.toUpperCase()} />
           <BodyText>{data[3].body}</BodyText>
@@ -343,7 +345,7 @@ export default function Index() {
           className={styles.washwash}
         />
       </Section>
-      <Section bgColor="#02F5D4">
+      <Section bgColor="#02F5D4" audio="AYEK 2.wav">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -366,7 +368,7 @@ export default function Index() {
           <BodyText>{data[4].body}</BodyText>
         </motion.div>
       </Section>
-      <Section bgColor="#9B5DE5">
+      <Section bgColor="#9B5DE5" audio="AYEK 3.wav">
         <motion.div
           className={styles.ben10}
           initial={{ x: 200 }}
@@ -387,7 +389,7 @@ export default function Index() {
           <BodyText>{data[5].body}</BodyText>
         </motion.div>
       </Section>
-      <Section bgColor="#F15BB5">
+      <Section bgColor="#F15BB5" audio="AYEK 1.wav">
         <motion.div
           initial={{ opacity: 0, scale: "50%" }}
           whileInView={{ opacity: 1, scale: "100%" }}
@@ -402,7 +404,7 @@ export default function Index() {
           <BodyText>{data[6].body}</BodyText>
         </div>
       </Section>
-      <Section bgColor="#FEE440">
+      <Section bgColor="#FEE440" audio="AYEK 2.wav">
         <motion.img
           initial={{ opacity: 0, scale: "50%" }}
           whileInView={{ opacity: 1, scale: "100%" }}
@@ -417,7 +419,7 @@ export default function Index() {
           <BodyText>{data[7].body}</BodyText>
         </div>
       </Section>
-      <Section bgColor="#03BBF9">
+      <Section bgColor="#03BBF9" audio="AYEK 3.wav">
         <motion.div
           initial={{ opacity: 0, scale: "0%" }}
           whileInView={{ opacity: 1, scale: "70%", rotate: "360deg" }}
@@ -432,7 +434,7 @@ export default function Index() {
           <BodyText>{data[8].body}</BodyText>
         </div>
       </Section>
-      <Section bgColor="#02F5D4">
+      <Section bgColor="#02F5D4" audio="AYEK 1.wav">
         <motion.div
           initial={{ x: 100, opacity: 0, y: 100 }}
           whileInView={{ x: 0, opacity: 1, y: 20 }}
@@ -452,8 +454,8 @@ export default function Index() {
         >
           <Image src="/house.png" width={680} height={800} alt="Pastor" />
         </motion.div>
-      </Section> */}
-      <Section bgColor="#9B5DE5"  onEnterViewport={()=> playAudio("/sounds/AYEK 1.wav")}>
+      </Section>
+      <Section bgColor="#9B5DE5" audio="AYEK 1.wav">
         <img
           // initial={{ y: 200 }}
           // whileInView={{ y: 10 }}
@@ -474,7 +476,7 @@ export default function Index() {
           <BodyText>{data[10].body}</BodyText>
         </motion.div>
       </Section>
-      <Section bgColor="#F15BB5" onEnterViewport={()=> playAudio("/sounds/AYEK 2.wav")}>
+      <Section bgColor="#F15BB5" audio="AYEK 1.wav">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -495,7 +497,7 @@ export default function Index() {
           <BodyText>{data[11].body}</BodyText>
         </motion.div>
       </Section>
-      <Section bgColor="#FEE440" onEnterViewport={()=> playAudio("/sounds/AYEK 3.wav")}>
+      <Section bgColor="#FEE440" audio="AYEK 1.wav">
         <motion.div
           initial={{ y: 100 }}
           whileInView={{ y: 0 }}
@@ -518,7 +520,7 @@ export default function Index() {
           className={styles.newspaper}
         />
       </Section>
-      <Section bgColor="#03BBF9" onEnterViewport={()=> playAudio("/sounds/AYEK 4.wav")}>
+      <Section bgColor="#03BBF9" audio="AYEK 1.wav">
         <motion.div
           initial={{ y: 0 }}
           whileInView={{ y: 100 }}
@@ -539,7 +541,7 @@ export default function Index() {
           <Image src={data[17].image} width={595} height={700} alt="Betting" />
         </motion.div>
       </Section>
-      <Section bgColor="#02F5D4" onEnterViewport={()=> playAudio("/sounds/AYEK 1.wav")}>
+      <Section bgColor="#02F5D4" audio="AYEK 1.wav">
         <motion.div
           initial={{ y: 100 }}
           whileInView={{ y: 0 }}
@@ -565,7 +567,7 @@ export default function Index() {
           />
         </motion.div>
       </Section>
-      <Section bgColor="#9B5DE5" onEnterViewport={()=> playAudio("/sounds/AYEK 2.wav")}>
+      <Section bgColor="#9B5DE5" audio="AYEK 1.wav">
         <motion.div
           initial={{ y: 0 }}
           whileInView={{ y: 100 }}
@@ -586,7 +588,7 @@ export default function Index() {
           className={styles.vote}
         />
       </Section>
-      <Section bgColor="#F15BB5" onEnterViewport={()=> playAudio("/sounds/AYEK 3.wav")}>
+      <Section bgColor="#F15BB5" audio="AYEK 1.wav">
         <motion.div
           initial={{ y: -1 }}
           whileInView={{ y: 5 }}
@@ -607,7 +609,7 @@ export default function Index() {
           <Image src={data[15].image} width={640} height={700} alt="phone" />
         </motion.div>
       </Section>
-      {/* <Section bgColor="#FEE440">
+      <Section bgColor="#FEE440" audio="AYEK 1.wav">
         <motion.img
           src={data[19].image}
           alt="politician"
@@ -628,7 +630,7 @@ export default function Index() {
           <BodyText>{data[19].body}</BodyText>
         </motion.div>
       </Section>
-      <Section bgColor="#03BBF9">
+      <Section bgColor="#03BBF9" audio="AYEK 1.wav">
         <motion.img
           src={data[20].image}
           alt="phone"
@@ -649,7 +651,7 @@ export default function Index() {
           <BodyText>{data[20].body}</BodyText>
         </motion.div>
       </Section>
-      <Section bgColor="#02F5D4">
+      <Section bgColor="#02F5D4" audio="AYEK 1.wav">
         <motion.img
           src={data[21].image}
           alt="phone"
@@ -670,7 +672,7 @@ export default function Index() {
           <BodyText>{data[21].body}</BodyText>
         </motion.div>
       </Section>
-      <Section bgColor="#9B5DE5">
+      <Section bgColor="#9B5DE5" audio="AYEK 1.wav">
         <motion.img
           src={data[22].image}
           alt="phone"
@@ -691,7 +693,7 @@ export default function Index() {
           <BodyText>{data[22].body}</BodyText>
         </motion.div>
       </Section>
-      <Section bgColor="#F15BB5">
+      <Section bgColor="#F15BB5" audio="AYEK 1.wav">
         <motion.img
           src={data[23].image}
           alt="phone"
@@ -712,7 +714,7 @@ export default function Index() {
           <BodyText>{data[23].body}</BodyText>
         </motion.div>
       </Section>
-      <Section bgColor="#FEE440">
+      <Section bgColor="#FEE440" audio="AYEK 1.wav">
         <motion.img
           src={data[24].image}
           alt="phone"
@@ -733,7 +735,7 @@ export default function Index() {
           <BodyText>{data[24].body}</BodyText>
         </motion.div>
       </Section>
-      <Section bgColor="#03BBF9">
+      <Section bgColor="#03BBF9" audio="AYEK 1.wav">
         <motion.img
           src={data[25].image}
           alt="phone"
@@ -754,7 +756,7 @@ export default function Index() {
           <BodyText>{data[25].body}</BodyText>
         </motion.div>
       </Section>
-      <Section bgColor="#02F5D4">
+      <Section bgColor="#02F5D4" audio="AYEK 1.wav">
         <motion.img
           src={data[26].image}
           alt="phone"
@@ -775,7 +777,7 @@ export default function Index() {
           <BodyText>{data[26].body}</BodyText>
         </motion.div>
       </Section>
-      <Section bgColor="#9B5DE5">
+      <Section bgColor="#9B5DE5" audio="AYEK 1.wav">
         <motion.img
           src={data[27].image}
           alt="phone"
@@ -796,7 +798,7 @@ export default function Index() {
           <BodyText>{data[27].body}</BodyText>
         </motion.div>
       </Section>
-      <Section bgColor="#F15BB5">
+      <Section bgColor="#F15BB5" audio="AYEK 1.wav">
         <motion.img
           src={data[28].image}
           alt="phone"
@@ -817,7 +819,7 @@ export default function Index() {
           <BodyText>{data[28].body}</BodyText>
         </motion.div>
       </Section>
-      <Section bgColor="#FEE440">
+      <Section bgColor="#FEE440" audio="AYEK 1.wav">
         <motion.img
           src={data[29].image}
           alt="phone"
@@ -838,7 +840,7 @@ export default function Index() {
           <BodyText>{data[29].body}</BodyText>
         </motion.div>
       </Section>
-      <Section bgColor="#03BBF9">
+      <Section bgColor="#03BBF9" audio="AYEK 1.wav">
         <motion.img
           src={data[30].image}
           alt="phone"
@@ -859,7 +861,7 @@ export default function Index() {
           <BodyText>{data[30].body}</BodyText>
         </motion.div>
       </Section>
-      <Section bgColor="#02F5D4">
+      <Section bgColor="#02F5D4" audio="AYEK 1.wav">
         <motion.img
           src={data[31].image}
           alt="phone"
@@ -880,7 +882,7 @@ export default function Index() {
           <BodyText>{data[31].body}</BodyText>
         </motion.div>
       </Section>
-      <Section bgColor="#9B5DE5">
+      <Section bgColor="#9B5DE5" audio="AYEK 1.wav">
         <motion.img
           src={data[32].image}
           alt="phone"
@@ -901,7 +903,7 @@ export default function Index() {
           <BodyText>{data[32].body}</BodyText>
         </motion.div>
       </Section>
-      <Section bgColor="#03BBF9">
+      <Section bgColor="#03BBF9" audio="AYEK 1.wav">
         <motion.img
           src={data[33].image}
           alt="phone"
@@ -922,7 +924,7 @@ export default function Index() {
           <BodyText>{data[33].body}</BodyText>
         </motion.div>
       </Section>
-      <Section bgColor="#9B5DE5">
+      <Section bgColor="#9B5DE5" audio="AYEK 1.wav">
         <motion.img
           src={data[35].image}
           alt="phone"
@@ -943,7 +945,7 @@ export default function Index() {
           <BodyText>{data[35].body}</BodyText>
         </motion.div>
       </Section>
-      <Section bgColor="#F15BB5">
+      <Section bgColor="#F15BB5" audio="AYEK 1.wav">
         <motion.img
           src={data[34].image}
           alt="phone"
@@ -963,7 +965,7 @@ export default function Index() {
           <Header level={34} data={data[34].header.toUpperCase()} />
           <BodyText>{data[33].body}</BodyText>
         </motion.div>
-      </Section> */}
+      </Section>
       <div className={styles.endCredits}>
         <div className={styles.creditsHeader}>
           <h1>CREW AND CREDITS</h1>

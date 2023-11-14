@@ -70,8 +70,8 @@
     // height: 70%;
     // width: 42%;
 
-    @media (max-width: 461px) {
-        transform: scale(60%);        
+    @media (max-width: 500px) {
+        transform: scale(35%);        
     }
 }
 
@@ -108,29 +108,39 @@
     // margin-top: -400px;
 }
 
-.ways{
+.ways {
     font-size: 132px;
-        @media (max-width: 1441px) {
-                font-size: 64px;
-            }
+
+    @media (max-width: 1441px) {
+        font-size: 64px;
+    }
 }
 
-.to{
+.to {
     font-size: 48px;
-            @media (max-width: 1441px) {
-                    font-size: 32px;
-                }
+
+    @media (max-width: 1441px) {
+        font-size: 32px;
+    }
+
+    // @media (max-width: 500px) {
+    //     font-size: 24px;
+    // }
 }
 
-.lose{
+.lose {
     font-size: 280px;
     line-height: 80%;
     text-align: end;
-        @media (max-width: 1441px) {
-                font-size: 240px;
-            }
-}
 
+    @media (max-width: 1441px) {
+        font-size: 240px;
+    }
+
+    // @media (max-width: 500px) {
+    //     font-size: 160px;
+    // }
+}
 .middlePart{
     display: flex;
     align-items: top;
@@ -148,6 +158,10 @@
 
 .money{
     font-size: 64px;
+
+    // @media (max-width: 500px) {
+    //     font-size: px;        
+    // }
 }
 
 .in{
