@@ -10,6 +10,7 @@ interface SectionProps{
 const Section = ({ children, audio, bgColor }: SectionProps) => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const audioRef = React.useRef<HTMLAudioElement | null>(null);
+  const audioRefB = React.useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -25,12 +26,12 @@ const Section = ({ children, audio, bgColor }: SectionProps) => {
       { root: null, rootMargin: '100px', threshold: 1.0 }
     );
 
-    if (audioRef.current) {
+    if (sectionRef.current) {
       observer.observe(audioRef.current);
     }
 
     return () => {
-      if (audioRef.current) {
+      if (sectionRef.current) {
         observer.unobserve(audioRef.current);
       }
     };
@@ -40,12 +41,16 @@ const Section = ({ children, audio, bgColor }: SectionProps) => {
   return(
     <div
       ref={sectionRef} 
-      className={styles.section} 
-      style={{backgroundColor: bgColor}}
+      className={styles.section}
+      style={{
+        backgroundColor: bgColor
+      }} 
     >
-      <audio ref={audioRef} preload="auto">
-        <source type="audio/mpeg" src={"/sounds/test.mp3"} />
-      </audio>
+      <div ref={audioRefB} style={{   backgroundColor: "red" }}>
+        <audio ref={audioRef} preload="auto" controls style={{ width: "0.2px", position: "absolute", top: "20%" }}>
+          <source type="audio/mpeg" src={"/sounds/test.mp3"} />
+        </audio>
+      </div>
       {children}
     </div>
   );
