@@ -105,7 +105,7 @@ export const data = [
     name: "Betting",
     image: "/betting.png",
     header: "BETTING",
-    body: "Your first few bets went well. You literally doubled your money! So you get hooked, you buy ‘guaranteed bet tips’ off someone in your estate WhatsApp group, and start spreading the money around. The tips are nonsense, and you’ve lost life savings on a horse race in Bosnia and Herzegovina. Why the guy selling the tips isn&#39;t a millionaire doesn&#39;t occur to you. He seems quite content with making KSh 1000 a week from schmucks like you.",
+    body: "Your first few bets went well. You literally doubled your money! So you get hooked, you buy ‘guaranteed bet tips’ off someone in your estate WhatsApp group, and start spreading the money around. The tips are nonsense, and you’ve lost life savings on a horse race in Bosnia and Herzegovina. Why the guy selling the tips isn't a millionaire doesn't occur to you. He seems quite content with making KSh 1000 a week from schmucks like you.",
   },
   {
     name: "Deposit on rent",
@@ -200,8 +200,8 @@ export const data = [
   {
     name: "Mchele (and we don't mean rice)",
     image: "/mmchele.png",
-    header: "Mchele (and we don&#39;t mean rice)",
-    body: "The interesting thing about taking home a one-night stand is that sometimes she could rob you of everything, including your night stand. Popularly referred to as mchele, pills such as rophynol and dropped into unsuspecting mens drinks once they’ve taken a young lady of the night home. There you are, half in this world and the next and giving this stranger everything from your MPESA Pin to the DSTV child lock password. Pretty soon eve. Her mates have come over and the neighbours think you haven&#39;t paid the rent so decided to move out in the middle of the night. When you wake up everything is gone even your knock-off perfume and Rolx watches.",
+    header: "Mchele (and we don't mean rice)",
+    body: "The interesting thing about taking home a one-night stand is that sometimes she could rob you of everything, including your night stand. Popularly referred to as mchele, pills such as rophynol and dropped into unsuspecting mens drinks once they’ve taken a young lady of the night home. There you are, half in this world and the next and giving this stranger everything from your MPESA Pin to the DSTV child lock password. Pretty soon eve. Her mates have come over and the neighbours think you haven't paid the rent so decided to move out in the middle of the night. When you wake up everything is gone even your knock-off perfume and Rolx watches.",
   },
   {
     name: "Buying this book",
@@ -213,6 +213,6 @@ export const data = [
     name: "Tender",
     image: "/tender.png",
     header: "Tender",
-    body: "Your friend works with the county government and can help you grab the tender to build pit latrines for some village. “Apply maze, I got you” Of course, you apply, and you get the tender because…your friend! However, after you’ve built the first latrine, your operation is at threat of grinding to a halt. - Your ‘friend’ needs a finder’s fee from you - The local MCA says that unless you grease his pockets, he’ll have the tender rescinded through the county assembly. - The local MP says that a little grease for him, they will declare your pit latrines unsafe. - The OCS says that without a little something something, items will start disappearing from your construction site. Soon you realise that after all the grease you&#39;re pouring into pockets, you’ll end up struggling to break even, leave alone make a profit.",
+    body: "Your friend works with the county government and can help you grab the tender to build pit latrines for some village. “Apply maze, I got you” Of course, you apply, and you get the tender because…your friend! However, after you’ve built the first latrine, your operation is at threat of grinding to a halt. - Your ‘friend’ needs a finder’s fee from you - The local MCA says that unless you grease his pockets, he’ll have the tender rescinded through the county assembly. - The local MP says that a little grease for him, they will declare your pit latrines unsafe. - The OCS says that without a little something something, items will start disappearing from your construction site. Soon you realise that after all the grease you're pouring into pockets, you’ll end up struggling to break even, leave alone make a profit.",
   },
 ];

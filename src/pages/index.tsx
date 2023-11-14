@@ -696,7 +696,7 @@ export default function Index() {
       <Section bgColor="#F15BB5" audio="AYEK 1.wav">
         <motion.img
           src={data[23].image}
-          alt="phone"
+          alt="coin"
           className={styles.coin}
           initial={{ rotate: "0deg", opacity: 0, scale: 0.1 }}
           whileInView={{ rotate: "360deg", opacity: 1, scale: 1 }}
@@ -963,7 +963,7 @@ export default function Index() {
           className={styles.bodyLeft}
         >
           <Header level={34} data={data[34].header.toUpperCase()} />
-          <BodyText>{data[33].body}</BodyText>
+          <BodyText>{data[34].body}</BodyText>
         </motion.div>
       </Section>
       <div className={styles.endCredits}>
