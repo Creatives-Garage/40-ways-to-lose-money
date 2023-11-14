@@ -43,7 +43,7 @@ const Section = ({ children, audio, bgColor }: SectionProps) => {
       className={styles.section} 
       style={{backgroundColor: bgColor}}
     >
-      <audio ref={audioRef} preload="metadata" controls>
+      <audio ref={audioRef} preload="metadata" controls loop>
         <source type="audio/mpeg" src={"/sounds/test.mp3"} />
       </audio>
       {children}

@@ -30,8 +30,3 @@ yarn-error.log*
 
 # vercel
 .vercel
-src/pages/index.tsx
-public/sounds/AYEK 4.wav
-public/sounds/AYEK 3.wav
-public/sounds/AYEK 2.wav
-public/sounds/AYEK 1.wav
